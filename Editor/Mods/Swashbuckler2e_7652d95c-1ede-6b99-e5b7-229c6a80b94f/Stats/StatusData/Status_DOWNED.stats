@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="030d44f1-be8c-4538-9512-08111d49292a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9df25ef8-1c46-40c0-a5a8-e12b71b4697b" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHEAT_DEATH_DOWNED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1f04af57-b58e-42e1-915f-8963309539f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b9c4794g03b6g7544g7c74g19d0a2bd6b6d" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(CHEAT_DEATH);RegainHitPoints(1,Guaranteed)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_HolyRebuke" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Incapacitated" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ResetCombatTurn();RestoreResource(Movement, 100%, 0);RestoreResource(BonusActionPoint, 100%, 0);RestoreResource(ActionPoint, 80%, 0);ApplyStatus(PANACHE,100,-1);" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

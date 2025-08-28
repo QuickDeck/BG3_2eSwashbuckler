@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af06bbb2-be96-44b6-88fa-f29fb345039c" />
+        <field name="Name" type="NameTableFieldDefinition" value="PANACHE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec7a2e39gc52eg969fg9cc1g6948058bff48" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81ac013dgecf4g925agac06ga6ab7607459e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MistyEscape" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PANACHE" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="OverheadOnTurn" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasPassive('Derringdo',context.Source) and IsBravado()):Advantage(Skill,Athletics);IF(HasPassive('Derringdo',context.Source) and IsBravado()):Advantage(Skill,Acrobatics);IF(HasPassive('Derringdo',context.Source) and IsBravado()):Advantage(Skill,Deception);IF(HasPassive('Derringdo',context.Source) and IsBravado()):Advantage(Skill,Intimidation);IF(HasPassive('Derringdo',context.Source) and IsBravado()):Advantage(Skill,Persuasion);IF(HasPassive('Derringdo',context.Source) and IsBravado()):Advantage(Skill,SleightOfHand);ActionResource(Movement,1.5,0);IF(CharacterLevelGreaterThan(6)):ActionResource(Movement,1.5,0);" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="336a2ab2-bcc1-48a1-9cf9-208fe1c15583" />
+        <field name="Name" type="NameTableFieldDefinition" value="STYLISH_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfb54ca7ag3c16gde0eg361cg1971a6633485" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f1c1cc9g8675gfd52g45ddgeff9057b60fb" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Buff" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CIRCUMSTANCE_BONUS_BRAVADO" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsBravado()):RollBonus(SkillCheck,1);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="462612dc-eb51-47cd-8e1f-22f20a48503c" />
+        <field name="Name" type="NameTableFieldDefinition" value="STYLISH_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="336a2ab2-bcc1-48a1-9cf9-208fe1c15583" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff46984egdec2gf328g328bg7644cba531b2" version="2" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsBravado()):RollBonus(SkillCheck,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="feab110b-69e4-4d59-9f39-4c94e82f783d" />
+        <field name="Name" type="NameTableFieldDefinition" value="RASCAL_SLOW" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h90a93300g3c58g61d5gd9f6ga21ad8992694" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc5d65762g8ff4g088ag8feegc10ee29ea285" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Sentinel_ZeroSpeed" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="WEAK" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPEED_A" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('TARGETING_FIN_SPEED_1') and not HasStatus('TARGETING_FIN_SPEED_2')):ActionResource(Movement,-3,0);IF(HasStatus('TARGETING_FIN_SPEED_1') and not HasStatus('TARGETING_FIN_SPEED_2')):ActionResource(Movement,-1.5,0);MovementSpeedLimit(Walk);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0c04355-e0e6-4f58-af9c-c122a0387023" />
+        <field name="Name" type="NameTableFieldDefinition" value="TARGETING_FIN_SPEED_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="02b3d7ab-7f82-4e18-9045-675a6963d287" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h721378b6gcf34g1612g8b45gb5e5646f8188" version="1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPEED_B" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('TARGETING_FIN_SPEED_1')):ActionResource(Movement,-3,0);IF(HasStatus('TARGETING_FIN_SPEED_1')):ActionResource(Movement,-1.5,0);MovementSpeedLimit(Walk);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h16fb7b87gf16ag3536g8a4cgbcc7bc425d52" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f2e1419-e216-4694-8da4-f8705f2cf6b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="TARGETING_FIN_SPEED_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e0c04355-e0e6-4f58-af9c-c122a0387023" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,-1.5,0);MovementSpeedLimit(Walk);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;TickingWithSource;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPEED_C" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ccae70a-d4f0-4319-a1de-e26903f5ddb1" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLEEDING_FINISHER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3afd546c-6695-483f-9a61-f4feb91e64a8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hefc8344fgec24g4456g5f9eg34c4dc5f3a94" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(SwashbucklerPrecisionDamageFinisher),Slashing);" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="8" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(SwashbucklerPrecisionDamageFinisher),Slashing);" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(SwashbucklerPrecisionDamageFinisher),Slashing);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3cca58e1g0698gae77gae6dga49e266554b7" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ccf5b215-69e6-448f-aef4-c58eb9aea552" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUAL_FINISHER_HELPER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2467dd91g8c4dga621ge517gca1fd46dab31" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6140806dg6337gb71eg44bcgdf5bf7e21eba" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HordeBreaker_Melee" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;TickingWithSource;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7fb0cd8f-56b7-4b35-bb1f-a1f1b1ad4a69" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUAL_FINISHER_FREE_STRIKE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h399ed41bge1f5g408dgb535ga9c4b01a88a1" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HordeBreaker_Melee" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DualFinisherFreeStrike);IF(HasStatus('MAP_PENALTY_2ND', context.Source) and SpellId('Target_DualFinisherFreeStrike') and not AgileMAP()):RollBonus(Attack, 5);IF(HasStatus('MAP_PENALTY_2ND', context.Source) and SpellId('Target_DualFinisherFreeStrike') and AgileMAP()):RollBonus(Attack, 4);IF(HasStatus('MAP_PENALTY_3RD', context.Source) and SpellId('Target_DualFinisherFreeStrike') and not AgileMAP()):RollBonus(Attack, 5);IF(HasStatus('MAP_PENALTY_3RD', context.Source) and SpellId('Target_DualFinisherFreeStrike') and AgileMAP()):RollBonus(Attack, 4);IF(HasPassive('CombinationFinisher', context.Source) and SpellId('Target_DualFinisherFreeStrike') and HasStatus('MAP_PENALTY_2ND', context.Source)):RollBonus(Attack, -1);IF(HasPassive('CombinationFinisher', context.Source) and SpellId('Target_DualFinisherFreeStrike') and HasStatus('MAP_PENALTY_3RD', context.Source)):RollBonus(Attack, -2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnMove" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,DUAL_FINISHER_HELPER_AURA,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d4bce94-742e-4f85-8027-50f326c6ad55" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUAL_FINISHER_HELPER_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h22c30568ga072g79e2g471ag254e9b2b71ba" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HordeBreaker_Melee" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="18" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(DUAL_FINISHER_HELPER_REMOVE,100,1);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;TickingWithSource;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31003191-20b8-4c60-bfc2-56577a449c9d" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTRAVAGANT_PARRY_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="556bbe40-4d70-44c9-9fa2-96df353b1753" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cfb9667g2be2g90edged76g30d92b50760b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7cdf8265g9d16gd326g7111gadf6e2aee453" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CIRC_BON_1AC);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not WieldingOneHandedWeapon()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnUnequip;OnEquip" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value=";" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b46084bf-a2ca-4090-a620-d29d04ae532b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTRAVAGANT_PARRY_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="31003191-20b8-4c60-bfc2-56577a449c9d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbe917d3g003agd4b3gbedeg692a6b36f4cb" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CIRC_BON_2AC);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not WieldingSingleOneHandedWeapon()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3cf0ef87-6d63-40ee-9eb3-0f17bc504e6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="AFTER_YOU" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b5b9924gc490g3b45gfa23g524cc32b2c7b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03226ef0gb91dg9c51ga3a1g4f14087e1f04" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(-15);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3273bb58-f0d3-4f58-8b20-ad2a378895d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ANTAGONIZE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb003499ag71cdg832eg3243gb850c2ac6b73" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e94a27ag2747gaf8ag4379g51a5b7bf7384" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Frightened" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Frightened" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Frightened" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ANTAGONIZE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(STAT_PEN_1ATTACK);Tag(STAT_PEN_1AC);Tag(STAT_PEN_1DC);Tag(STAT_PEN_1SAVES);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;OverheadOnTurn" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('ANTAGONIZE',context.Observer,context.Source)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AntagonizeTarget;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f331b4ac-3ef5-46ea-a994-21a8a32cffd2" />
+        <field name="Name" type="NameTableFieldDefinition" value="BON_MOT_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5c6a04ag25b4g84c2gec32g1d66c18279ba" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9fb005b8g58f0g2232g52d2g7a8c5d86134c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Tasha'sHideousLaughter" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Laughing" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Laughing" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="LAUGHTER" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BON_MOT" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BonMotRetort);Skill(Perception,-2);Tag(STAT_PEN_2WILL);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a0d8945-6c19-4472-8e9c-9376a9b677c7" />
+        <field name="Name" type="NameTableFieldDefinition" value="BON_MOT_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f331b4ac-3ef5-46ea-a994-21a8a32cffd2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87f3ac95gd1d3g759bg4779g7d8bf5af94b4" version="1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BonMotRetort);Skill(Perception,-3);Tag(STAT_PEN_3WILL);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8f590b18-3700-4c4c-8921-0dbfe5456c6c" />
+        <field name="Name" type="NameTableFieldDefinition" value="StatusPenalty3WillSaves" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b72b055a-22ba-4395-85c1-0252a26db28e" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05cef7e0g1958g54abg057bg67657a21dbc2" version="1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Tagged('STAT_PEN_3WILL')" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(Tagged('STAT_PEN_2WILL')):ApplyStatus(StatusPenalty2WillSaves,100,-1);&#xD;&#xA;IF(Tagged('STAT_PEN_1WILL')):ApplyStatus(StatusPenalty1WillSaves,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f127705e-3e0f-4d23-9582-14c0a6a22fde" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIRTY_TRICK" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10ada52agde66g19d6gf5f1g746c413bfaaa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5f00d1dbgcf24gf923ge326g1ef97e9f5d4c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_IronboundPursuit" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DirtyTrickClear);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('CLUMSY')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a14605f-9bd6-4c66-b647-5030ea92fa8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="GOADING_FEINT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf10a27beg0bfeg6109g4cb6gbe1001cb778e" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd17434agcd05g88a9g628fgea3e7258d148" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PrecisionAttack" />
+        <field name="StackId" type="StringTableFieldDefinition" value="GOADING_FEINT" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasPassive('GoadingFeint',context.Target)):RollBonus(Attack,-2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39eff1a5-c52a-421b-90ad-c1c3f74a87f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="GOADING_FEINT_ONCE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a14605f-9bd6-4c66-b647-5030ea92fa8e" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PrecisionAttack" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6a83412fgf7f9g90ffgca02gc5e019c83217" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasPassive('GoadingFeint',context.Target)):RollBonus(Attack,-2);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="GoadingFeintTarget;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a9cdfa80-1f18-4fcc-a222-c7100a6125fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVEN_THE_ODDS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc7d7f14cg042fg62c3gb91eg595f8745a048" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf9efc0bagb065g1fd9gd70ege11a4a7cdea7" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_WildMagic_LightBolt" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnMove" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8cd051f9-4af2-44cb-857c-ea63b22ed543" />
+        <field name="Name" type="NameTableFieldDefinition" value="DASTARDLY_DASH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cbc6e71g5e89g4baag5c38gdb8fc076617b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd0fe1030g3161g7a27ga170gc8ce47af2109" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_ExpeditiousRetreat" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DASTARDLY_DASH" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasPassive('TripPanache',context.Source)):UnlockSpell(Target_TripPanacheDastardly);IF(not HasPassive('TripPanache',context.Source)):UnlockSpell(Target_TripDastardly);IF(HasPassive('DirtyTrickPanache',context.Source)):UnlockSpell(Target_DirtyTrickPanacheDastardly);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a86f3178-9ff7-42e5-997f-ae35550182c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ONE_FOR_ALL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had34e50bge8ceg406ag062cg6a9fa5b925ed" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d55107dg019agd5b1g343cgddb7e2be7b91" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Resistance" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="383f3667-fae4-4685-8e04-caba26371bb3" />
+        <field name="Name" type="NameTableFieldDefinition" value="OFF_BALANCED_SWASHBUCKLER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ad7732f9-5f49-4878-b18b-1118daf00d5f" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca7c36a7-5230-44d6-902c-bdb8a7a06c37" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUAL_FINISHER_HELPER_REMOVE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ccf5b215-69e6-448f-aef4-c58eb9aea552" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h447773c1g2016g6fc3g0badgca16a64d9648" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7862bd6dge11ag829ag2181g2e4313138774" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DUAL_FINISHER_HELPER)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cdc6e8bd-7732-42f2-98e1-3bb5aa13a769" />
+        <field name="Name" type="NameTableFieldDefinition" value="STUNNING_FINISHER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c71fd888-b375-42b8-b0da-21c0e4af8b5d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2d8f227cg51b3g4b42gb1f4g15781d18acf2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7b325e46g8ee9gdc84g4225gbd8d2020a00a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ConcussiveSmash" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STUNNING_FINISHER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(ReactionActionPoint);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca0106d9-b3a4-4566-8df9-60ebf7522f71" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHEAT_DEATH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34703941g6bb6gc32eg99b8g1dde84b2ce01" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ccea8dfg2a47g1acdg3d71g1ce2b3713122" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_HolyRebuke" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DownedStatus(CHEAT_DEATH_DOWNED,5);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a72b0240-7479-4415-b401-3ac6489da987" />
+        <field name="Name" type="NameTableFieldDefinition" value="TARGETING_FIN_ENFEEBLED_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7102a2ea-4890-4785-817d-6a7993ec4df8" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22824a16-73a3-4c82-9cdd-10426d0f6740" />
+        <field name="Name" type="NameTableFieldDefinition" value="TARGETING_FIN_STUPEFIED_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0f5d214f-852a-43c8-9c48-91feae3cd002" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="448e95ee-7979-47cb-8b5b-6eda756dd8db" />
+        <field name="Name" type="NameTableFieldDefinition" value="GET_USED_TO_DISAPPOINTMENT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he0b2d266gcc99ga75fg8890gca4846d93a94" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h181c252eg0494g890ag9270g9c5aeb7ab0c0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CalmEmotions" />
+        <field name="StackId" type="StringTableFieldDefinition" value="GET_USED_TO_DISAPPOINTMENT" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3369a694-39dd-484a-b3b7-17db8e46b449" />
+        <field name="Name" type="NameTableFieldDefinition" value="GET_USED_TO_DISAPPOINTMENT_ACTION" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb864a691g9b2ag9bbag9fe7g906fb6be2a54" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha4e71ae1gf761g4e98g2d48g555b9e487e8e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CalmEmotions" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GetUsedToDisappointment);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3f82aef-e6cb-4890-b48b-5cc871c01700" />
+        <field name="Name" type="NameTableFieldDefinition" value="VIVACIOUS_BRAVADO" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_VivaciousBravado);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h01f61868gc018g995ag394cgb2f00cabd5b4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e81acbag1473gba18g8397g37710c91cad6" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Thaumaturgy" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VIVACIOUS_BRAVADO" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3c67b3e9-b2f8-4c47-81a5-c6f2e80409aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="VIVACIOUS_BRAVADO_HP" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h937145d7gbfe7ge4d9g3ea7g5af7555f4cdd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2ece8149g0d8dg1d4ag78a9g93e8ec00c264" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Thaumaturgy" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VIVACIOUS_BRAVADO_HP" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(LevelMapValue(CharacterLevel) + CharismaModifier);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP() or not HasStatus('VIVACIOUS_BRAVADO_HP') or not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnCombatEnded;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dda48007-c28b-4b7f-9d68-dc1783c90058" />
+        <field name="Name" type="NameTableFieldDefinition" value="PANACHE_TEMPORARY" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70418bcage2feg1292gd327g8dd60aeda8b6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9c6a7bf1g5960g75c8g9f74g5c2d0f31a977" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MistyEscape" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusId('PANACHE')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(SELF,PANACHE)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PANACHE,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63f8d2ff-d000-40cb-94f1-b0bc19f97ac6" />
+        <field name="Name" type="NameTableFieldDefinition" value="FENCER_FEINT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2a35ae3-1955-4577-adee-bf23b73d15f6" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value=";" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a3070ce-afff-42f1-8631-e6c94b42f74f" />
+        <field name="Name" type="NameTableFieldDefinition" value="WIT_GOAD" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h629d01a1g878cg1f0eg130egd6abe5fbf1a2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a154298g670bg9e62gd6d4g28189130ac8c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_AbsolutePower" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WIT_GOAD" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('WIT_GOAD',context.Source,context.Target) and not Tagged('CIRC_PEN_2ATTACK') and not Tagged('CIRC_PEN_1ATTACK') ):RollBonus(Attack,-2);IF(HasStatus('WIT_GOAD',context.Source,context.Target) and not Tagged('CIRC_PEN_2ATTACK') and Tagged('CIRC_PEN_1ATTACK') ):RollBonus(Attack,-1);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

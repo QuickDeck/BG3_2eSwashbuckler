@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="GameProject" type="LSString" value=""/>
+            <attribute id="Module" type="LSString" value="7652d95c-1ede-6b99-e5b7-229c6a80b94f"/>
+            <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+            <attribute id="UUID" type="LSString" value="b9d6f05d-7ace-32d9-9457-88d34ee11edc"/>
+            <attribute id="UpdatedDependencies" type="bool" value="true"/>
+            <children>
+                <node id="Categories"/>
+            </children>
+        </node>
+    </region>
+</save>

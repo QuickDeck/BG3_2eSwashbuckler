@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="9fd4ac7a-fad7-424f-83df-0893eae93c38">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f44c5a8-06c7-4750-b1c1-41b216e6f8ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtravagantParry" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="33f516a2-5385-46f0-aecf-11c8450e0d05" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(WieldingOneHandedWeapon(context.Source) and not WieldingSingleOneHandedWeapon(context.Source)):ApplyStatus(SELF,EXTRAVAGANT_PARRY_1,100,1);IF(WieldingSingleOneHandedWeapon(context.Source)):ApplyStatus(SELF,EXTRAVAGANT_PARRY_2,100,1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h63498dabgbe43g9c23g0fe4g5e4099cf14e5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9f98897egb71cgec63g45e9gb516f68b90e8" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXTRAVAGANT_PARRY_1,100,1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingOneHandedWeapon(context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_DefensiveDualist" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a09de2c8-ec46-4c27-a502-bc92cf293fe5,,;,,;d9b3c874-58ef-4e29-8d09-271c9965c577,,;f549f93e-58ed-4b05-b214-e2d11ea12fde,,;244b53cb-dc0f-4932-afd0-ab19c6df1b34,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="cc478d8f-d3eb-46dc-844c-203ae2ec7df5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="6c5aecc7-c5a0-4fda-9f9b-24afe3e1f76a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5cd1dd7c-6ed1-4e21-8cf0-0e3e7e29b8e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BonMotRetort" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,BON_MOT_2);RemoveStatus(SELF,BON_MOT_3);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Tasha'sHideousLaughter" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h46859310g23b0gf676g8f58gacec8466a18f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b1e5d91gb4c3gfb98g76f0gddd99b02c810" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Start" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;972109d9-0470-41b1-aa82-8b01cecfc556,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;c91247cd-6e65-496a-9ed0-cd36f10bdc69,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b660a683-61c5-44a0-87c6-84cac5f9201d" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="RemoveStatus(SELF,'BON_MOT_2');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c73de528-8946-44a5-9a76-4ddf0f701c65" />
+        <field name="Name" type="NameTableFieldDefinition" value="DirtyTrickClear" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,CLUMSY);RemoveStatus(SELF,DIRTY_TRICK);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_IronboundPursuit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h136aacaeg1e90ga662g822fgc8c3f746256a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h10259b6cg4a48gea30g9c4cg03e6ecb058c0" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="RemoveStatus(SELF,'CLUMSY');" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Start" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;972109d9-0470-41b1-aa82-8b01cecfc556,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;c91247cd-6e65-496a-9ed0-cd36f10bdc69,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b660a683-61c5-44a0-87c6-84cac5f9201d" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4328b13-0e76-4fe9-9c13-eae54edab565" />
+        <field name="Name" type="NameTableFieldDefinition" value="EvenTheOdds" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,PANACHE,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_WildMagic_LightBolt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e730c70g0271g31eegaf95g36f9a1500738" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he2a22bdag7d50g3363g9662g9337f4c66862" version="2" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Start" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;972109d9-0470-41b1-aa82-8b01cecfc556,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;c91247cd-6e65-496a-9ed0-cd36f10bdc69,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('EVEN_THE_ODDS')" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="6e5e37e7-8d9e-4cb2-955b-7a4fec2d3d64" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea434f70-87a9-47df-80ce-b91ad7209f7d" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="129fccfa-2672-45ca-b256-de206b108a77" />
+        <field name="Name" type="NameTableFieldDefinition" value="VivaciousBravado" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,VIVACIOUS_BRAVADO);ApplyStatus(SELF,VIVACIOUS_BRAVADO_HP,100,1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Thaumaturgy" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdefe421g25baga91cg3ae5gd1edd169f1d1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb615065ag8d6ag6e70gb5d2g2287c0072a9a" version="3" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Start" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;972109d9-0470-41b1-aa82-8b01cecfc556,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;c91247cd-6e65-496a-9ed0-cd36f10bdc69,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="bd833cb2-2d28-4533-bfdf-67e4f77dd10f" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bc392fbd-4ca6-4066-954b-169eb0b963e0" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(LevelMapValue(CharacterLevel) + CharismaModifier)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="ClassDescriptions">
+        <node id="root">
+            <children>
+                <node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="18"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Swashbuckler"/>
+                    <attribute id="ClassHotbarColumns" type="int32" value="5"/>
+                    <attribute id="CommonHotbarColumns" type="int32" value="9"/>
+                    <attribute id="Description" type="TranslatedString" handle="h7cdfa9ceg2a62gf51ege8bdg2bec076486ee" version="4"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha20303e5g0d36g52afg8eceg1ec2ed6e36ba" version="1"/>
+                    <attribute id="HpPerLevel" type="int32" value="10"/>
+                    <attribute id="ItemsHotbarColumns" type="int32" value="2"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Swashbuckler2e"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="Description" type="TranslatedString" handle="h82b503e1gbe30gd49fg03c2g7a0d17539caa" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb2281b2eg5d95g515egbeb3ga7611499a6c1" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Braggart"/>
+                    <attribute id="ParentGuid" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="a6df37c2-553d-4776-b674-434dfe5d4407"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="5c8c9734-64b4-4b6a-9166-e3de71507020"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="Description" type="TranslatedString" handle="hae25b3e8g7be5gb2eeg6098g51a7e76cfa4d" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h912f1441g2e9bgf407g844agc79200954c9e" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Fencer"/>
+                    <attribute id="ParentGuid" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="4de2e31e-83da-4f9f-9c94-d949a914fa03"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="5e6b1aaa-bb41-4ad5-afa2-653fcac41a6d"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="Description" type="TranslatedString" handle="h98145f56gaa80gb42aga564g981399b8ee3a" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="had311752g7985g6648geaf0g5861939f4b5d" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Gymnast"/>
+                    <attribute id="ParentGuid" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="c890378f-51ab-4817-9c6d-7c71a1bf0a4f"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="Description" type="TranslatedString" handle="h773ad02bg2adfgc57fg1f62g74b6f1966985" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="he9da8c98g93abg5dadg7cefg2ca0a8716f81" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Rascal"/>
+                    <attribute id="ParentGuid" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="00ae5915-7458-485f-b702-28c2df9c8dd9"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="0572e43e-404a-4f01-b02e-239ccc9cbfdf"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="Description" type="TranslatedString" handle="hfd11f661g5526gc5ceg705bgee0ee5feb4dd" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h83394d3bg5c24g751cgf503g9ff52428bda9" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Wit"/>
+                    <attribute id="ParentGuid" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="df5cb860-1d53-485a-b7c5-848819b99e21"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="dcf2c9a1-9004-45fb-9c44-86d34952d90b"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

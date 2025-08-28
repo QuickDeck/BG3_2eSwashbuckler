@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ExpertiseBonus(Perception);ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PathfinderStatBoosts;ReflexExpert;WillExpert;ConfidentFinisher;StylishCombatant;PreciseStrike;TumbleThroughPanache;UnarmedABP;FeatPrerequisites;AnchorPosition"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(c7d6316b-f765-4573-b057-336043ff4de4,4);SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="26df9e23-1e04-43eb-8673-82b272e24122"/>
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="5c8c9734-64b4-4b6a-9166-e3de71507020"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="5e6b1aaa-bb41-4ad5-afa2-653fcac41a6d"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="c890378f-51ab-4817-9c6d-7c71a1bf0a4f"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="0572e43e-404a-4f01-b02e-239ccc9cbfdf"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="dcf2c9a1-9004-45fb-9c44-86d34952d90b"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(c4b29d1c-8ca7-49f5-9862-cf92ad456d84,1,ClassFeat)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="a5b3d0cd-4fa9-4a45-9b10-ba7171775dcf"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FortitudeExpert;OpportuneRiposte;VivaciousSpeed"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="eccad46b-9325-4d96-911b-ab9ca3a67e79"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ec82f551-f02a-4c97-b947-0de7e431a8a6,1,ClassFeat)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="aada8511-c0d8-499c-903e-6058f9e64b28"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponExpert;CriticalSpecialization"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);SelectPassives(0cffd48f-3374-4126-a0a2-14e5923baee0,4,AbilityBoosts)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="ce8a0ed7-1b2e-4b65-a4df-5c29724e6e7f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(4e64619c-eb0e-4842-96ca-6de3f8be1386,1,ClassFeat)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="75a84f57-20a6-4315-89fd-157e7b3c65b1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ReflexMaster;WeaponSpecializationExpert"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="ReflexExpert"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="0a5798e9-79d1-4a72-9055-c55721461ead"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(a87eb3be-bbf0-44d2-9194-b7a3b6467b72,1,ClassFeat)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="11e52053-0c27-484f-9af4-de316d60bc00"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="StylishCombatant2;ClassDCExpert"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="58fe7841-04c1-4696-8f67-11c220c10077"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(d9491aac-fd17-4ad2-8801-aadb3e906b59,1,ClassFeat)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="f1ff6ed5-a830-44aa-889c-4e5118d69859"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PerceptionIncrease2"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="3bb6690d-b2ec-44c0-a556-526a8b911062"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(31b3093f-e08b-4f81-bcf6-7aa319cd9644,1,ClassFeat)"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="5fa81d7d-a4c2-4b5d-935e-df41261add3d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Braggart"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DemoralizePanache"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="a6df37c2-553d-4776-b674-434dfe5d4407"/>
+                    <attribute id="UUID" type="guid" value="2d0d037c-1909-4c5c-8da0-ccddc3645274"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Deception)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Fencer"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FeintPanache"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4de2e31e-83da-4f9f-9c94-d949a914fa03"/>
+                    <attribute id="UUID" type="guid" value="84a418a6-f217-48c1-9e08-101bdd59be16"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Athletics)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Gymnast"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ShovePanache;GrapplePanache;TripPanache;"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd"/>
+                    <attribute id="UUID" type="guid" value="64e8a068-e5a2-4638-8908-ff55d14b7741"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,SleightOfHand)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Rascal"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DirtyTrickPanache"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="00ae5915-7458-485f-b702-28c2df9c8dd9"/>
+                    <attribute id="UUID" type="guid" value="f9045943-fafc-4509-8cb3-0744a712da6c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Persuasion)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Wit"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BonMotPanache"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="df5cb860-1d53-485a-b7c5-848819b99e21"/>
+                    <attribute id="UUID" type="guid" value="ea01aa9f-49c2-44f7-a3bc-51a343ceaae0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Braggart"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(5b462767-a327-4dcc-9dc5-efd65df5a331,1);"/>
+                    <attribute id="TableUUID" type="guid" value="a6df37c2-553d-4776-b674-434dfe5d4407"/>
+                    <attribute id="UUID" type="guid" value="e7daeb19-c3a7-46b1-964c-574da897d9c2"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Fencer"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(caca6df7-76d5-4722-bbe1-43b17880ecea,1);"/>
+                    <attribute id="TableUUID" type="guid" value="4de2e31e-83da-4f9f-9c94-d949a914fa03"/>
+                    <attribute id="UUID" type="guid" value="0c523e7a-7e60-4c74-be44-3c5f550cd859"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Gymnast"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(514c85b2-2369-4331-b3c4-85be33538f1e,1);"/>
+                    <attribute id="TableUUID" type="guid" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd"/>
+                    <attribute id="UUID" type="guid" value="9719ea3c-08e4-46f4-87d8-77391bc2b168"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Rascal"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(0c600574-b732-4b5a-b34c-fde980c36d64,1);"/>
+                    <attribute id="TableUUID" type="guid" value="00ae5915-7458-485f-b702-28c2df9c8dd9"/>
+                    <attribute id="UUID" type="guid" value="75db116c-ee94-41ee-a689-c4e4ba8f8e6d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Wit"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(e73259d1-4bcd-42f5-8d1a-f4c341f5890e,1);"/>
+                    <attribute id="TableUUID" type="guid" value="df5cb860-1d53-485a-b7c5-848819b99e21"/>
+                    <attribute id="UUID" type="guid" value="27403b50-58b8-4f6c-9874-ad3089811b8a"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

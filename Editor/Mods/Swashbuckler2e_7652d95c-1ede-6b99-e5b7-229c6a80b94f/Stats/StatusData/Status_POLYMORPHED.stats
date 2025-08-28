@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="ee4c30a6-9728-40e1-9722-b8a1ec68599e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HUM_M" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34f162d7ge55cg9ce6g3608ga1b5fb1bb3cf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h95606861gfadbgda69g6bb6g4c238be24afd" version="1" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="a01943d2-ffa9-4139-9af0-36a8022479c2" />
+        <field name="Rules" type="GuidObjectTableFieldDefinition" value="73669f2e-7e20-4ccf-828f-07a2015d43ad" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f82a5aa0-3493-4413-bd90-f2c258471058" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HUM_F" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="7703f8a7-e6cb-4777-a612-f77b67b9133a" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="170a5a9b-ee4e-4601-a187-b26eff46490b" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HUM_MS" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="f33b78ff-0047-404e-9d9b-31b7d0a321ce" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="593c570d-f624-47eb-be2c-d5a5046dbb2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_DWR_M" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="aa081f63-1c94-413c-8745-0a9ea2ef6c09" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b812e68-90be-4ef9-bdd2-fe5fe3e86ed0" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_DWR_F" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="04e1aa42-fd70-44fe-838a-43b61c365025" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c794b9c8-46da-4dd7-9561-e152faeea280" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_GNO_M" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="191cba37-0e57-4f77-a88b-a21c1d605594" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a20bfb05-c640-4070-8e1e-50ec7670555c" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_GNO_F" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="b83f185a-ea46-41b8-8168-3ebbe01b153c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="762c3950-11bf-4f73-93d9-d3bffaa8ac9e" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HFL_M" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="63f20461-2865-4c7f-ab8c-ed17ac54ba28" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6efb414b-1b3f-4542-8889-5b72b9594b07" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HFL_F" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="0c125aa3-a927-4fd0-8723-3a0f0994e599" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ff1b505a-4178-48a8-879c-5328da79763c" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_RESET" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="90c63d04-77cb-4f4e-8a49-c0459e30b7e6" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

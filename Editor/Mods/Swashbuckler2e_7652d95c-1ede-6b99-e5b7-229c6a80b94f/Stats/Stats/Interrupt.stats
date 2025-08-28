@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c496009d-a970-44a3-b882-7ed3364dc271">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c98fe60c-62b6-4aa7-9d25-c49620bc56f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_OpportuneRiposteStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h99fec009g82b8gfc08g9b69g6426993159ef" version="1" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsMeleeAttack() and IsCriticalMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3af58adegff86g5484g4249g9a82e406cb05" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_OpportunityAttack" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_OpportuneRiposte,true,true,true);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="62ea6318-e86f-480f-b506-f51cb1537c4c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_OpportuneRiposteDisarm" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd3cfbdcfga068g5509ge619g83013a16cc89" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3cff3418g76f4g60dag3533g5fd031853082" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HinderingStrike" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsMeleeAttack() and IsCriticalMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_OpportuneRiposteDisarm,true,true,true);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71184d47-90b7-4227-9bea-e55fd43d073f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StunningFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4f923861g7034g77aag0e2dga243d7cc6829" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h175792d9g9fd3ge2c6gcc82g2f264c9bd55e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ConcussiveSmash" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_StunningFinisher') and Self(context.Source,context.Observer) and not AnyEntityIsItem();" />
+        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, IncapClassDC())" />
+        <field name="Success" type="StringTableFieldDefinition" value="IF(not SaveCritMiss()):ApplyStatus(STUNNED1,100,1);IF(SaveCritMiss()):ApplyStatus(STUNNED3,100,1);" />
+        <field name="Failure" type="StringTableFieldDefinition" value="IF(not SaveCrit()):ApplyStatus(STUNNING_FINISHER,100,1);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a2c4999e-560e-4c60-b0aa-7cb304757950" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashyDodge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1948eead-b551-4788-a9cb-e65765c0caa7" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hff49e582g9663g4483gf7f6g554cf90a3244" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbaa8d35g3ca2g59eag69e0g23f9fa35e25a" version="2" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(HasInterruptedAttack()):AdjustRoll(-2);IF(not HasStatus('PANACHE', context.Observer)):ApplyStatus(OBSERVER_OBSERVER,PANACHE_TEMPORARY,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_UncannyDodge" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4006cabf-ee64-4373-a129-d64e172d15c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CharmedLife" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72adb0ed-cf5a-4fc7-8846-093008ddc7b4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41295ab4g0652gf909gdfe3g33e27ae4f207" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h77f38b69g043dgd2f3gac01gad75d12540ae" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value=";" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,PANACHE_TEMPORARY);AdjustRoll(OBSERVER_OBSERVER,2);ApplyStatus(OBSERVER_OBSERVER,PANACHE,100,-1);" />
+        <field name="Stack" type="StringTableFieldDefinition" value=";" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7432a4e-8166-408b-a24e-397f8d4eeedf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_GuardiansDeflection" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7b8f97a7g6a12g06fdgc374g3e590add899b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h578fd65fg088eg0684g8a1ega897ce1d2298" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_FightingStyle_Protection" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and not Self(context.Observer, context.Target) and Enemy(context.Observer, context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(2,context.Source);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,PANACHE_TEMPORARY);AdjustRoll(-2);ApplyStatus(OBSERVER_OBSERVER,PANACHE,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02f7e209-ed00-40b6-b259-42bef5d805be" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_OpportuneRiposteStrikeFree" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c98fe60c-62b6-4aa7-9d25-c49620bc56f0" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SwashbucklerReactionPoint:1;" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Flurry" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fad391ee-9820-4ac7-a591-aea7938e1779" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_OpportuneRiposteDisarmFree" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="62ea6318-e86f-480f-b506-f51cb1537c4c" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SwashbucklerReactionPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1948c58-c558-4356-83c5-ef2590e1eb3b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_GoadingFeintHit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf0df4922g3dadgdc2fg8223gb2517cbe436e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcc4b303bg3ff3ga2f8g3f54g40df65d965f5" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PrecisionAttack" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(SpellId('Target_FeintPanache') or SpellId('Target_Feint')) and ConditionResult(context.InterruptedRoll.Total &gt;= context.InterruptedRoll.Difficulty) and not ConditionResult(context.InterruptedRoll.NaturalRoll == 20) and not ConditionResult(context.InterruptedRoll.Total &gt;= (context.InterruptedRoll.Difficulty + 10));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(1);ApplyStatus(OBSERVER_TARGET,GOADING_FEINT_ONCE,100,1);RemoveStatus(SELF,PANACHE_TEMPORARY);ApplyStatus(OBSERVER_OBSERVER,PANACHE,100,-1);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d688f042-6baa-477a-8602-d95bdb751fb6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_GoadingFeintCrit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1948c58-c558-4356-83c5-ef2590e1eb3b" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56d3bec9gfd9cg7c80gdbc0gae2cf9c1c3c2" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(SpellId('Target_FeintPanache') or SpellId('Target_Feint')) and ConditionResult(context.InterruptedRoll.Total &gt;= context.InterruptedRoll.Difficulty) and (ConditionResult(context.InterruptedRoll.NaturalRoll == 20) or ConditionResult(context.InterruptedRoll.Total &gt;= (context.InterruptedRoll.Difficulty + 10)));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(1);ApplyStatus(OBSERVER_TARGET,GOADING_FEINT,100,1);RemoveStatus(SELF,PANACHE_TEMPORARY);ApplyStatus(OBSERVER_OBSERVER,PANACHE,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7eb3c4b-bbd2-4f66-a4f8-fb4be2873100" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_OneForAll" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb92164e3g88fdg738bgd3dcga74cdd2bca4f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c80dba4g546bg6d4cg3564g19f154a2caf1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Resistance" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ONE_FOR_ALL',context.Source);" />
+        <field name="Roll" type="StringTableFieldDefinition" value="SkillCheck(Skill.Persuasion,15,false,false,context.Source,context.Observer);" />
+        <field name="Success" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,PANACHE_TEMPORARY);IF(IsCriticalSkill() and HasPassive('PersuasionIncrease',context.Observer)):AdjustRoll(1) ;IF(IsCriticalSkill()):AdjustRoll(OBSERVER_OBSERVER,1) ;AdjustRoll(OBSERVER_OBSERVER,1);ApplyStatus(OBSERVER_OBSERVER,PANACHE,100,-1);" />
+        <field name="Failure" type="StringTableFieldDefinition" value="IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Observer)):ApplyStatus(OBSERVER_OBSERVER,PANACHE_TEMPORARY,100,1);IF(IsCriticalMissSkill()):AdjustRoll(-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73c73670-4769-4771-99d2-2746cbd94e1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Antagonize" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfc66cfe2gd9d0ga1efg30b2g3ba0b2d4a64d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h14c9f951gd2d4g8f2eg6382g02851cd2011f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(SpellId('Target_Demoralize') or SpellId('Target_DemoralizePanache')) and ConditionResult(context.InterruptedRoll.Total &gt;= context.InterruptedRoll.Difficulty);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,ANTAGONIZE,100,-1);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e5509608-d20c-4f7a-9ad2-9dc98d2cf272" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CombinationFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hda42db29g938fg06c6gf24ag4aca769577dd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03ba79b7g148ag7920ge183gcea33b55d9b7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_Overwhelm" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsFinisher();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(HasStatus('MAP_PENALTY_2ND',context.Source)):AdjustRoll(1);IF(HasStatus('MAP_PENALTY_3RD',context.Source)):AdjustRoll(2);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

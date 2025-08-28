@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="bfa22a59-fd65-4e35-ae0f-ac960c3b5fd2">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ea9ad56f-239d-4eb3-84a9-31ed33cafa07" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2578b97ag7adaga628gbe9agc87d7183d9b4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5214941g3e1dgb331geedeg4743c13467c9" version="2" />
+        <field name="Type" type="FixedStringTableFieldDefinition" value="Swashbuckler2e" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7565d203-4e45-4d6e-9a0f-32e1a75def29" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h74848c31g9f22ge05cgf5d9g4c07883ffc76" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h65b32112g2c36geb1bg0f25g7ab453f24a88" version="2" />
+        <field name="Type" type="FixedStringTableFieldDefinition" value="Braggart" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="a6df37c2-553d-4776-b674-434dfe5d4407" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="13305631-ca6a-417e-8e0e-add2716a05a7" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f86e2d1g33e2g064dgedc9g3725dd3dfaaa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2e6a6270g4ee8gf1a8g7439g88c2ae8aa2e9" version="2" />
+        <field name="Type" type="FixedStringTableFieldDefinition" value="Fencer" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="4de2e31e-83da-4f9f-9c94-d949a914fa03" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="616fdf77-b24e-4312-a4a5-0240194eb829" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf835b111g9afeg4abagad89gb0a27b31f4f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfb2650d3g8e20gdb30g3c0fg5e1159ca3964" version="2" />
+        <field name="Type" type="FixedStringTableFieldDefinition" value="Gymnast" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="55a058b7-c27d-48bf-974d-26e30a23df1b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7478bb1dgf52dgfbb9g1bd3g7dc7666894ae" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haac33f53g4550g4c2ag153cgfc1ca6bb32bd" version="2" />
+        <field name="Type" type="FixedStringTableFieldDefinition" value="Rascal" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="00ae5915-7458-485f-b702-28c2df9c8dd9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0df88302-64e1-4157-8d6c-128fe0b6f51d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h032bd457ga110g371bg163fg352cc9bae0ef" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf8a6f9fg53d0gb363gdea8g3e14408d0859" version="2" />
+        <field name="Type" type="FixedStringTableFieldDefinition" value="Wit" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="df5cb860-1d53-485a-b7c5-848819b99e21" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

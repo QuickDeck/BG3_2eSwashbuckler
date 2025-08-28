@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2"/>
+                    <attribute id="Level13" type="LSString" value="5"/>
+                    <attribute id="Level17" type="LSString" value="6"/>
+                    <attribute id="Level5" type="LSString" value="3"/>
+                    <attribute id="Level9" type="LSString" value="4"/>
+                    <attribute id="Name" type="FixedString" value="SwashbucklerPrecisionDamage"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="UUID" type="guid" value="ed79ff27-392d-47ef-9a1b-aa208b0ed8f7"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d6"/>
+                    <attribute id="Level13" type="LSString" value="5d6"/>
+                    <attribute id="Level17" type="LSString" value="6d6"/>
+                    <attribute id="Level5" type="LSString" value="3d6"/>
+                    <attribute id="Level9" type="LSString" value="4d6"/>
+                    <attribute id="Name" type="FixedString" value="SwashbucklerPrecisionDamageFinisher"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="UUID" type="guid" value="ffe3cb68-6264-4afd-ba52-bbab7870bb8b"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="0"/>
+                    <attribute id="Level11" type="LSString" value="3"/>
+                    <attribute id="Level3" type="LSString" value="1.5"/>
+                    <attribute id="Level7" type="LSString" value="2.2"/>
+                    <attribute id="Name" type="FixedString" value="SwashbucklerStylishSpeed"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="UUID" type="guid" value="3f08c9ba-64e7-4178-b798-17594a88a8ec"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1.5"/>
+                    <attribute id="Level11" type="LSString" value="6"/>
+                    <attribute id="Level3" type="LSString" value="3"/>
+                    <attribute id="Level7" type="LSString" value="4.5"/>
+                    <attribute id="Name" type="FixedString" value="SwashbucklerStylishSpeedPanache"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <attribute id="UUID" type="guid" value="7738f444-9731-4ca1-956b-f400ea2ec571"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,87 @@
+local __util = require 'larian.util'
+
+-- Helpers for 2e Swashbuckler
+
+-- Centralise the list of finisher functions
+function IsFinisher()
+   return SpellId('Target_ConfidentFinisher')
+   | SpellId('Target_RetreatingFinisher')
+   | SpellId('Target_UnbalancingFinisher')
+   | SpellId('Zone_ImpalingFinisher')
+   | SpellId('Target_BleedingFinisher')
+   | SpellId('Target_DualFinisher')
+   | SpellId('Target_DualFinisherFreeStrike')
+   | SpellId('Target_StunningFinisher')
+   | SpellId('Target_StumblingFinisher')
+   | SpellId('Target_TargetingFinisherArm')
+   | SpellId('Target_TargetingFinisherHead')
+   | SpellId('Target_TargetingFinisherLeg')
+   | SpellId('Rush_MobileFinisher')
+end
+
+function IsBravado()
+--[==[   secondary = ''
+   local tertiary = ''
+   local quarternary = ''
+   if context.source.GetClassLevel('Braggart') >= 1 then
+      secondary = 'Target_DemoralizePanache'
+   end
+   if context.source.GetClassLevel('Fencer') >= 1 then
+      secondary = 'Target_FeintPanache'
+   end
+   if context.source.GetClassLevel('Gymnast') >= 1 then
+      secondary = 'Target_GrapplePanache'
+      tertiary = 'Target_TripPanache'
+   end
+   if context.source.GetClassLevel('Rascal') >= 1 then
+      secondary = 'Target_DirtyTrickSwashbuckler'
+   end
+   if context.source.GetClassLevel('Wit') >= 1 then
+      secondary = 'Target_BonMotSwashbuckler'
+   end
+--]==]
+   return Character() --SpellId('Target_Demoralize')
+--[==[   | SpellId(secondary)
+   | SpellId(tertiary)
+   | SpellId(quarternary)
+--]==]
+end
+
+function WieldingPiercingWeapon(entity)
+   entity = entity or context.Target
+   local weaponEntity = GetActiveWeapon(entity, true)
+   return IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Pikes|Spears|Morningstars|Warpicks|Tridents', weaponEntity)
+end
+
+function WieldingBludgeoningWeapon(entity)
+   entity = entity or context.Target
+   local weaponEntity = GetActiveWeapon(entity, true)
+   return IsWeaponOfProficiencyGroup('Flails|Maces|LightHammers|Clubs|Greatclubs|Warhammers|Quarterstaffs|Mauls', weaponEntity)
+end
+
+function WieldingSlashingWeapon(entity)
+   entity = entity or context.Target
+   local weaponEntity = GetActiveWeapon(entity, true)
+   return IsWeaponOfProficiencyGroup('Scimitars|Longswords|Glaives|Handaxes|Halberds|Greataxes|Greatswords', weaponEntity)
+end
+
+function WieldingOneHandedWeapon(entity)
+   entity = entity or context.Target
+   local weaponEntity = GetActiveWeapon(entity, true)
+   --local offHandEntity = GetActiveWeapon(entity, false)
+   return IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Spears|Morningstars|Warpicks|Tridents|Flails|Maces|LightHammers|Clubs|Warhammers|Quarterstaffs|Scimitars|Longswords|Handaxes', weaponEntity)
+   --| IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Spears|Morningstars|Warpicks|Tridents|Flails|Maces|LightHammers|Clubs|Warhammers|Quarterstaffs|Scimitars|Longswords|Handaxes', offHandEntity)
+end
+
+-- Used to determine if extravagant parry should grant +2
+function WieldingSingleOneHandedWeapon(entity)
+   entity = entity or context.Target
+   local weaponEntity = GetActiveWeapon(entity, true)
+   local offHandEntity = GetActiveWeapon(entity, false)
+   return IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Spears|Morningstars|Warpicks|Tridents|Flails|Maces|LightHammers|Clubs|Warhammers|Quarterstaffs|Scimitars|Longswords|Handaxes', weaponEntity)
+   & ~IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Spears|Morningstars|Warpicks|Tridents|Flails|Maces|LightHammers|Clubs|Warhammers|Quarterstaffs|Scimitars|Longswords|Handaxes', offHandEntity)
+end
+
+function isStrike()
+   return HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack')
+end

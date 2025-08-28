@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="7b3e5d55-79e7-4c79-a045-65832047778a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7d6316b-f765-4573-b057-336043ff4de4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Swashbuckler Skill List" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Acrobatics, AnimalHandling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Performance, Persuasion, Religion, SleightOfHand, Stealth, Survival" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b462767-a327-4dcc-9dc5-efd65df5a331" />
+        <field name="Name" type="NameTableFieldDefinition" value="Braggart Stylish Tricks" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Acrobatics, Intimidation" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="caca6df7-76d5-4722-bbe1-43b17880ecea" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fencer Stylish Tricks" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Acrobatics, Deception" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="514c85b2-2369-4331-b3c4-85be33538f1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Gymnast Stylish Tricks" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Acrobatics, Athletics" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c600574-b732-4b5a-b34c-fde980c36d64" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rascal Stylish Tricks" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Acrobatics, SleightOfHand" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e73259d1-4bcd-42f5-8d1a-f4c341f5890e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Wit Stylish Tricks" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Acrobatics, Persuasion" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

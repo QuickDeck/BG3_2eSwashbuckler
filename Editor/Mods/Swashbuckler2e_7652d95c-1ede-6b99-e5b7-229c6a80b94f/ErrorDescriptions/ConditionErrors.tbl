@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c045520a-c4bc-4b3a-a5d8-61667e0a1cc4">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="74394e9f-e857-4a9c-a584-7084a03288c9" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Status_PANACHE_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h612a6b5dge297ga3d0gbbb0g52328a27d619" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4bc91b2b-2d95-4250-9c94-d2dce13d4cfc" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Status_STRIDE_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28e735ddg318cg93cegbd1bg0bdb52e949b1" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ec2a04c1-6b1a-4506-8e00-b6f81c483e7a" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Status_EVEN_THE_ODDS_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd216decgf509g1524g40a2g118710661fce" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6616f474-011f-4e60-9225-0e69c8ef17ba" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Status_DUAL_FINISHER_HELPER_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9320c36bg4122gd6c1g1509g166119f3e91f" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d7a7f3d5-b034-4834-ade6-4b788f0cfc3d" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Status_GET_USED_TO_DISAPPOINTMENT_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he85efc64ge18cgaf19g58d6g3192287e1094" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="97986990-c4c1-4851-a4cb-a23450ef596f" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="NeedsOneHanded" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cddeef1g946bg1036gcb3dgcab0e7133fee" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e2c11f2a-9a75-4ede-b8d7-021b91594fb9" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="HasOneHanded" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h00283be8gc8b8g3980gac1eg5eb96e385d6c" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

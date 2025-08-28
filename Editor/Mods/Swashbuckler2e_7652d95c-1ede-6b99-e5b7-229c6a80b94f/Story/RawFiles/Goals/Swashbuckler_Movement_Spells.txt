@@ -1,0 +1,9 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_MovementSpell("Shout_TumbleThrough");
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION

@@ -1,0 +1,141 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+IsTagged(_Character, (TAG)HALFLING_b99b6a5d-8445-44e4-ac58-81b2ee88aab1, 1)
+AND
+IsTagged(_Character, (TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_HFL_F", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+IsTagged(_Character, (TAG)HALFLING_b99b6a5d-8445-44e4-ac58-81b2ee88aab1, 1)
+AND
+NOT IsTagged(_Character, (TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_HFL_M", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+IsTagged(_Character, (TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c, 1)
+AND
+IsTagged(_Character, (TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_GNO_F", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+IsTagged(_Character, (TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c, 1)
+AND
+NOT IsTagged(_Character, (TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_GNO_M", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+IsTagged(_Character, (TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd, 1)
+AND
+IsTagged(_Character, (TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_DWR_F", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+IsTagged(_Character, (TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd, 1)
+AND
+NOT IsTagged(_Character, (TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_DWR_M", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+NOT IsTagged(_Character, (TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd, 1)
+AND
+NOT IsTagged(_Character, (TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c, 1)
+AND
+NOT IsTagged(_Character, (TAG)HALFLING_b99b6a5d-8445-44e4-ac58-81b2ee88aab1, 1)
+AND
+IsTagged(_Character, (TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7, 1)
+AND
+NOT IsTagged(_Character, (TAG)BODYTYPE_STRONG_d3116e58-c55a-4853-a700-bee996207397, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_HUM_M", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+NOT IsTagged(_Character, (TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd, 1)
+AND
+NOT IsTagged(_Character, (TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c, 1)
+AND
+NOT IsTagged(_Character, (TAG)HALFLING_b99b6a5d-8445-44e4-ac58-81b2ee88aab1, 1)
+AND
+IsTagged(_Character, (TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7, 1)
+AND
+IsTagged(_Character, (TAG)BODYTYPE_STRONG_d3116e58-c55a-4853-a700-bee996207397, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_HUM_MS", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+NOT IsTagged(_Character, (TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd, 1)
+AND
+NOT IsTagged(_Character, (TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c, 1)
+AND
+NOT IsTagged(_Character, (TAG)HALFLING_b99b6a5d-8445-44e4-ac58-81b2ee88aab1, 1)
+AND
+NOT IsTagged(_Character, (TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7, 1)
+AND
+NOT IsTagged(_Character, (TAG)BODYTYPE_STRONG_d3116e58-c55a-4853-a700-bee996207397, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_HUM_F", 0.0);
+
+IF
+EnteredCombat((CHARACTER)_Character, _)
+AND
+HasPassive(_Character, "TumbleThroughPanache", 1)
+AND
+NOT IsTagged(_Character, (TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd, 1)
+AND
+NOT IsTagged(_Character, (TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c, 1)
+AND
+NOT IsTagged(_Character, (TAG)HALFLING_b99b6a5d-8445-44e4-ac58-81b2ee88aab1, 1)
+AND
+NOT IsTagged(_Character, (TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7, 1)
+AND
+IsTagged(_Character, (TAG)BODYTYPE_STRONG_d3116e58-c55a-4853-a700-bee996207397, 1)
+THEN
+ApplyStatus(_Character, "TUMBLE_THROUGH_HUM_M", 0.0);
+EXITSECTION
+
+ENDEXITSECTION

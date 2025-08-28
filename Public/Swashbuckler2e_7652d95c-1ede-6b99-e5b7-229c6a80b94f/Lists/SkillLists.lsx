@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="SkillLists">
+        <node id="root">
+            <children>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, AnimalHandling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Performance, Persuasion, Religion, SleightOfHand, Stealth, Survival"/>
+                    <attribute id="UUID" type="guid" value="c7d6316b-f765-4573-b057-336043ff4de4"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Braggart Stylish Tricks"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, Intimidation"/>
+                    <attribute id="UUID" type="guid" value="5b462767-a327-4dcc-9dc5-efd65df5a331"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Fencer Stylish Tricks"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, Deception"/>
+                    <attribute id="UUID" type="guid" value="caca6df7-76d5-4722-bbe1-43b17880ecea"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Gymnast Stylish Tricks"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, Athletics"/>
+                    <attribute id="UUID" type="guid" value="514c85b2-2369-4331-b3c4-85be33538f1e"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Rascal Stylish Tricks"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, SleightOfHand"/>
+                    <attribute id="UUID" type="guid" value="0c600574-b732-4b5a-b34c-fde980c36d64"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Wit Stylish Tricks"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, Persuasion"/>
+                    <attribute id="UUID" type="guid" value="e73259d1-4bcd-42f5-8d1a-f4c341f5890e"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

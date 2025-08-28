@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="2d56f038-865d-492c-b434-c2b3e821cc13">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="SwashbucklerPrecisionDamage" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ed79ff27-392d-47ef-9a1b-aa208b0ed8f7" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1" />
+        <field name="Level1" type="StringTableFieldDefinition" value="2" />
+        <field name="Level5" type="StringTableFieldDefinition" value="3" />
+        <field name="Level9" type="StringTableFieldDefinition" value="4" />
+        <field name="Level13" type="StringTableFieldDefinition" value="5" />
+        <field name="Level17" type="StringTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="SwashbucklerPrecisionDamageFinisher" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ffe3cb68-6264-4afd-ba52-bbab7870bb8b" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1" />
+        <field name="Level1" type="StringTableFieldDefinition" value="2d6" />
+        <field name="Level5" type="StringTableFieldDefinition" value="3d6" />
+        <field name="Level9" type="StringTableFieldDefinition" value="4d6" />
+        <field name="Level13" type="StringTableFieldDefinition" value="5d6" />
+        <field name="Level17" type="StringTableFieldDefinition" value="6d6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="SwashbucklerStylishSpeed" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3f08c9ba-64e7-4178-b798-17594a88a8ec" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1" />
+        <field name="Level1" type="StringTableFieldDefinition" value="0" />
+        <field name="Level3" type="StringTableFieldDefinition" value="1.5" />
+        <field name="Level7" type="StringTableFieldDefinition" value="2.2" />
+        <field name="Level11" type="StringTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="SwashbucklerStylishSpeedPanache" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7738f444-9731-4ca1-956b-f400ea2ec571" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1" />
+        <field name="Level1" type="StringTableFieldDefinition" value="1.5" />
+        <field name="Level3" type="StringTableFieldDefinition" value="3" />
+        <field name="Level7" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Level11" type="StringTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

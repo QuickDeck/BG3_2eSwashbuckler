@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="AnimationSetPriorities">
+        <node id="root">
+            <children>
+                <node id="AnimationSetPriority">
+                    <attribute id="Name" type="LSString" value="Tumble_Through"/>
+                    <attribute id="Priority" type="int32" value="0"/>
+                    <attribute id="UUID" type="guid" value="78112bc3-ad8b-4772-bdb0-7e6a8580bf25"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

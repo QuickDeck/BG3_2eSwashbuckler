@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="4a20cc05-eed3-46b0-bd19-62b9954ffd5e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="73669f2e-7e20-4ccf-828f-07a2015d43ad" />
+        <field name="RuleName" type="StringTableFieldDefinition" value="TumbleThroughProxyRule" />
+        <field name="ApplyVisual" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

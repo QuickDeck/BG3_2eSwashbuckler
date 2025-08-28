@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="Rulebook">
+        <node id="root">
+            <children>
+                <node id="Rule">
+                    <attribute id="ApplyVisual" type="bool" value="true"/>
+                    <attribute id="RuleName" type="LSString" value="TumbleThroughProxyRule"/>
+                    <attribute id="UUID" type="guid" value="73669f2e-7e20-4ccf-828f-07a2015d43ad"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
