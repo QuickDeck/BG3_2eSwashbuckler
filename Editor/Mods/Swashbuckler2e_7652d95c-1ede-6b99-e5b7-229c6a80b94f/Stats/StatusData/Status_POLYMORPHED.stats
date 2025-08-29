@@ -9,6 +9,10 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h95606861gfadbgda69g6bb6g4c238be24afd" version="1" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="a01943d2-ffa9-4139-9af0-36a8022479c2" />
         <field name="Rules" type="GuidObjectTableFieldDefinition" value="73669f2e-7e20-4ccf-828f-07a2015d43ad" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="059cd43e-b697-4b34-8ab2-b27979c1494a" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="059cd43e-b697-4b34-8ab2-b27979c1494a" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_HUM_M)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -17,6 +21,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HUM_F" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="7703f8a7-e6cb-4777-a612-f77b67b9133a" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_HUM_F)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -25,6 +30,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HUM_MS" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="f33b78ff-0047-404e-9d9b-31b7d0a321ce" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_HUM_MS)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -33,6 +39,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_DWR_M" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="aa081f63-1c94-413c-8745-0a9ea2ef6c09" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_DWR_M)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -41,6 +48,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_DWR_F" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="04e1aa42-fd70-44fe-838a-43b61c365025" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_DWR_F)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -49,6 +57,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_GNO_M" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="191cba37-0e57-4f77-a88b-a21c1d605594" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_GNO_M)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -57,6 +66,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_GNO_F" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="b83f185a-ea46-41b8-8168-3ebbe01b153c" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_GNO_F)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -65,6 +75,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HFL_M" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="63f20461-2865-4c7f-ab8c-ed17ac54ba28" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_HFL_M)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -73,6 +84,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_HFL_F" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="0c125aa3-a927-4fd0-8723-3a0f0994e599" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_HFL_F)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -81,6 +93,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_RESET" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d68bc9f-d91f-4024-b2ac-5cfb9e504372" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="90c63d04-77cb-4f4e-8a49-c0459e30b7e6" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TUMBLE_THROUGH_RESET)" />
       </fields>
     </stat_object>
   </stat_objects>
