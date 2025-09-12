@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Acrobatics;Deception;Athletics;Deception;Persuasion;Intimidation;Stealth;SleightOfHand;Performance;Insight;AnimalHandling;Investigation;Medicine;History;Religion;Arcana"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="469d392c-9605-4f9b-b298-a360076def22"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Acrobatics;Deception;Athletics;Deception;Persuasion;Intimidation;Stealth;SleightOfHand;Performance;Insight;AnimalHandling;Investigation;Medicine;History;Religion;Arcana"/>
+                    <attribute id="Level" type="int32" value="3"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="21dd3691-99d1-44d6-983d-331dbd3a38ae"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Acrobatics;Deception;Athletics;Deception;Persuasion;Intimidation;Stealth;SleightOfHand;Performance;Insight;AnimalHandling;Investigation;Medicine;History;Religion;Arcana"/>
+                    <attribute id="Level" type="int32" value="5"/>
+                    <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="UUID" type="guid" value="e4a2714f-ece6-4b91-9b01-f0197eff3c4b"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

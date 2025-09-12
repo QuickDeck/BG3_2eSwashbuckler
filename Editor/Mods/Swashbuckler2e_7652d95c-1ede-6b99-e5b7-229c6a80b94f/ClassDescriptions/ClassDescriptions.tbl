@@ -21,6 +21,7 @@
         <field name="CommonHotbarColumns" type="IntegerTableFieldDefinition" value="9" />
         <field name="ClassHotbarColumns" type="IntegerTableFieldDefinition" value="5" />
         <field name="ItemsHotbarColumns" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="d93434bd-6b71-4789-b128-ee24156057cc" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

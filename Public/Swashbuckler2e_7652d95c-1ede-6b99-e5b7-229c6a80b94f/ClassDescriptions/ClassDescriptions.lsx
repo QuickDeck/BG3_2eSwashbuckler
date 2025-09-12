@@ -22,6 +22,11 @@
                     <attribute id="ProgressionTableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="SpellCastingAbility" type="uint8" value="0"/>
                     <attribute id="UUID" type="guid" value="8f9267b1-6de9-4baa-8b4b-6d32b67f41c1"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="d93434bd-6b71-4789-b128-ee24156057cc"/>
+                        </node>
+                    </children>
                 </node>
                 <node id="ClassDescription">
                     <attribute id="CanLearnSpells" type="bool" value="false"/>

@@ -10,7 +10,7 @@
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="PassivesAdded" type="LSString" value="PathfinderStatBoosts;ReflexExpert;WillExpert;ConfidentFinisher;StylishCombatant;PreciseStrike;TumbleThroughPanache;UnarmedABP;FeatPrerequisites;AnchorPosition"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(c7d6316b-f765-4573-b057-336043ff4de4,4);SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(c7d6316b-f765-4573-b057-336043ff4de4,4);"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="26df9e23-1e04-43eb-8673-82b272e24122"/>
                     <children>
@@ -135,6 +135,7 @@
                     <attribute id="Name" type="LSString" value="Braggart"/>
                     <attribute id="PassivesAdded" type="LSString" value="DemoralizePanache"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="a6df37c2-553d-4776-b674-434dfe5d4407"/>
                     <attribute id="UUID" type="guid" value="2d0d037c-1909-4c5c-8da0-ccddc3645274"/>
                 </node>
@@ -144,6 +145,7 @@
                     <attribute id="Name" type="LSString" value="Fencer"/>
                     <attribute id="PassivesAdded" type="LSString" value="FeintPanache"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="4de2e31e-83da-4f9f-9c94-d949a914fa03"/>
                     <attribute id="UUID" type="guid" value="84a418a6-f217-48c1-9e08-101bdd59be16"/>
                 </node>
@@ -153,6 +155,7 @@
                     <attribute id="Name" type="LSString" value="Gymnast"/>
                     <attribute id="PassivesAdded" type="LSString" value="ShovePanache;GrapplePanache;TripPanache;"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd"/>
                     <attribute id="UUID" type="guid" value="64e8a068-e5a2-4638-8908-ff55d14b7741"/>
                 </node>
@@ -162,6 +165,7 @@
                     <attribute id="Name" type="LSString" value="Rascal"/>
                     <attribute id="PassivesAdded" type="LSString" value="DirtyTrickPanache"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="00ae5915-7458-485f-b702-28c2df9c8dd9"/>
                     <attribute id="UUID" type="guid" value="f9045943-fafc-4509-8cb3-0744a712da6c"/>
                 </node>
@@ -171,6 +175,7 @@
                     <attribute id="Name" type="LSString" value="Wit"/>
                     <attribute id="PassivesAdded" type="LSString" value="BonMotPanache"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="df5cb860-1d53-485a-b7c5-848819b99e21"/>
                     <attribute id="UUID" type="guid" value="ea01aa9f-49c2-44f7-a3bc-51a343ceaae0"/>
                 </node>

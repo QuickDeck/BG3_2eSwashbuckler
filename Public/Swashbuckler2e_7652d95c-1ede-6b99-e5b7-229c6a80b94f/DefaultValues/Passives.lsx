@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="YoureNext"/>
+                    <attribute id="ClassUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SubclassUUID" type="guid" value="a6df37c2-553d-4776-b674-434dfe5d4407"/>
+                    <attribute id="TableUUID" type="guid" value="a6df37c2-553d-4776-b674-434dfe5d4407"/>
+                    <attribute id="UUID" type="guid" value="32bbc0d1-c4d2-4713-84a7-d3abb0da6292"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="OneForAll"/>
+                    <attribute id="ClassUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SubclassUUID" type="guid" value="df5cb860-1d53-485a-b7c5-848819b99e21"/>
+                    <attribute id="TableUUID" type="guid" value="df5cb860-1d53-485a-b7c5-848819b99e21"/>
+                    <attribute id="UUID" type="guid" value="d8a05c9b-01a8-4f7e-acea-e007d26206bf"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="DisarmingFlair"/>
+                    <attribute id="ClassUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SubclassUUID" type="guid" value="00ae5915-7458-485f-b702-28c2df9c8dd9"/>
+                    <attribute id="TableUUID" type="guid" value="00ae5915-7458-485f-b702-28c2df9c8dd9"/>
+                    <attribute id="UUID" type="guid" value="3a917d50-682d-40f4-ad55-f1c54ed5c04a"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="DisarmingFlair"/>
+                    <attribute id="ClassUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SubclassUUID" type="guid" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd"/>
+                    <attribute id="TableUUID" type="guid" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd"/>
+                    <attribute id="UUID" type="guid" value="9fe08b99-9810-49ae-9885-88ae48283e89"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="GoadingFeint"/>
+                    <attribute id="ClassUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SubclassUUID" type="guid" value="4de2e31e-83da-4f9f-9c94-d949a914fa03"/>
+                    <attribute id="TableUUID" type="guid" value="4de2e31e-83da-4f9f-9c94-d949a914fa03"/>
+                    <attribute id="UUID" type="guid" value="203388a3-73b0-430f-9dcb-d09560f86feb"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

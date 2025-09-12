@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="f01245cf-d242-4f5b-af85-f795d310ac2c">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b70162be-57c7-4a06-bd97-b483c6bc025c" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="a6df37c2-553d-4776-b674-434dfe5d4407" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Dexterity;Charisma" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Braggart Ability Bonus" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0df984eb-beb9-49bb-b50c-88cb8bbdf72b" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="4de2e31e-83da-4f9f-9c94-d949a914fa03" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Dexterity;Charisma" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Fencer Ability Bonus" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5642704e-cc15-4b9e-94fc-7f8edc3c3fbd" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Dexterity;Strength" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Gymnast Ability Bonus" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="eb14076c-6bf5-493d-81a4-d885c6b2e644" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="00ae5915-7458-485f-b702-28c2df9c8dd9" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Dexterity;Strength" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Rascal Ability Bonus" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3e73193d-43f0-48be-b1d6-53a6659774d4" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="df5cb860-1d53-485a-b7c5-848819b99e21" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Dexterity;Charisma" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Wit Ability Bonus" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

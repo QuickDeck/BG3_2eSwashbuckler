@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="f01245cf-d242-4f5b-af85-f795d310ac2b">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="32bbc0d1-c4d2-4713-84a7-d3abb0da6292" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="a6df37c2-553d-4776-b674-434dfe5d4407" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="a6df37c2-553d-4776-b674-434dfe5d4407" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="YoureNext" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Braggart" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d8a05c9b-01a8-4f7e-acea-e007d26206bf" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="df5cb860-1d53-485a-b7c5-848819b99e21" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="df5cb860-1d53-485a-b7c5-848819b99e21" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="OneForAll" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Wit" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3a917d50-682d-40f4-ad55-f1c54ed5c04a" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="00ae5915-7458-485f-b702-28c2df9c8dd9" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="00ae5915-7458-485f-b702-28c2df9c8dd9" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="DisarmingFlair" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Rascal" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9fe08b99-9810-49ae-9885-88ae48283e89" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="DisarmingFlair" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Gymnast" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="203388a3-73b0-430f-9dcb-d09560f86feb" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="4de2e31e-83da-4f9f-9c94-d949a914fa03" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="4de2e31e-83da-4f9f-9c94-d949a914fa03" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="GoadingFeint" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Fencer" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

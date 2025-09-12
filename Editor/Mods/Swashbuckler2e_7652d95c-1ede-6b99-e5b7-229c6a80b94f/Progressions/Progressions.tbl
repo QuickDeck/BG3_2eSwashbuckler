@@ -11,7 +11,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;ReflexExpert;WillExpert;ConfidentFinisher;StylishCombatant;PreciseStrike;TumbleThroughPanache;UnarmedABP;FeatPrerequisites;AnchorPosition" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ExpertiseBonus(Perception);ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(c7d6316b-f765-4573-b057-336043ff4de4,4);SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(c7d6316b-f765-4573-b057-336043ff4de4,4);" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="5c8c9734-64b4-4b6a-9166-e3de71507020;5e6b1aaa-bb41-4ad5-afa2-653fcac41a6d;c890378f-51ab-4817-9c6d-7c71a1bf0a4f;0572e43e-404a-4f01-b02e-239ccc9cbfdf;dcf2c9a1-9004-45fb-9c44-86d34952d90b" />
       </fields>
     </stat_object>
@@ -152,6 +152,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Intimidation)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="DemoralizePanache" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -164,6 +165,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Deception)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="FeintPanache" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -176,6 +178,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Athletics)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ShovePanache;GrapplePanache;TripPanache;" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -188,6 +191,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,SleightOfHand)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="DirtyTrickPanache" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -200,6 +204,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Persuasion)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="BonMotPanache" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ae7102db-6178-46cd-ad1a-264c59dd854c,1,ClassFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

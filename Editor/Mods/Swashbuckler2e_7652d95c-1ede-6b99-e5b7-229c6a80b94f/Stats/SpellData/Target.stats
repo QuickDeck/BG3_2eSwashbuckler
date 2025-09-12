@@ -292,7 +292,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="66fed4f7-0948-4afd-82c0-0621cf2a4771" />
         <field name="Name" type="NameTableFieldDefinition" value="BonMotPanache" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.Persuasion,context.Target.GetPassiveSkill(Skill.Perception));" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.Persuasion,WillDC());" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE_TEMPORARY);IF(IsCriticalSkill()):ApplyStatus(BON_MOT_3,100,10);IF(not IsCriticalSkill()):ApplyStatus(BON_MOT_2,100,10);ApplyStatus(SELF,PANACHE,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);IF(IsCriticalMissSkill()):ApplyStatus(SELF,BON_MOT_2,100,10);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Ally();" />
@@ -322,7 +322,7 @@
         <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.SleightOfHand,context.Target.GetPassiveSkill(Skill.Acrobatics));" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.SleightOfHand,ReflexDC());" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE_TEMPORARY);IF(IsCriticalSkill()):ApplyStatus(CLUMSY,100,-1);IF(not IsCriticalSkill()):ApplyStatus(CLUMSY,100,1);ApplyStatus(SELF,PANACHE,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);IF(IsCriticalMissSkill()):ApplyStatus(SELF,PRONE,100,10);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self()" />
