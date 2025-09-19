@@ -426,8 +426,8 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusId('PANACHE')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(SELF,PANACHE)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PANACHE,100,-1);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(PANACHE)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PANACHE,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -452,6 +452,77 @@
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('WIT_GOAD',context.Source,context.Target) and not Tagged('CIRC_PEN_2ATTACK') and not Tagged('CIRC_PEN_1ATTACK') ):RollBonus(Attack,-2);IF(HasStatus('WIT_GOAD',context.Source,context.Target) and not Tagged('CIRC_PEN_2ATTACK') and Tagged('CIRC_PEN_1ATTACK') ):RollBonus(Attack,-1);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3af04766-fa73-4590-951e-469c22b22dc6" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_PANACHE_SUCCESS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha6e07bf1g55b7g5b87gcddaga79d44b8ed1e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb9dc74b3g2882g4f45g3d04g67f0918f1ddd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(PANACHE_TEMPORARY);ApplyStatus(PANACHE,100,-1);UseActionResource(Movement,5,0,true);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DEBUG_RESET_MOVE);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d769f582-ea32-4bea-9b88-ae0543f7c399" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_PANACHE_FAILURE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h813daffbg5c93ge086gf394gec345b131b28" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h51ba187dg2baagb347g6be6g19d932a233ee" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('PANACHE')):ApplyStatus(PANACHE_TEMPORARY,100,2);SetStatusDuration(PANACHE_TEMPORARY,2,ForceSet);UseActionResource(Movement,100%,0,true);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DEBUG_RESET_MOVE);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e043ca8-0753-48e6-9a06-55c139e71121" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_PANACHE_CRITFAIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2fe0ab96g8d62ge9c7gc39eg65e6af490fa0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd60c8bc6g543fg2df8g9e1cgd61b01e5c3cc" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(Movement,100%,0,true);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DEBUG_RESET_MOVE);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6b89c96-6d3c-44d8-b479-d5eda506bb62" />
+        <field name="Name" type="NameTableFieldDefinition" value="ACROBATICS_ROLL_TO_REFLEX_DC" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3addca1g3887gdeb5g5acbg714174b5b6f8" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb989d27dg5f06gdc77g2636geda5f4eae505" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ACROBATICS_ROLL_TO_REFLEX_DC" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,-7);IF(HasProficiencyBonus(Ability.Dexterity,Skill.Acrobatics)):RollBonus(SkillCheck,-2);IF(HasProficiencyBonus(Ability.Dexterity,Skill.Acrobatics) and HasPassive('PerceptionIncrease')):RollBonus(SkillCheck,-2);IF(HasPassive('AcrobaticsIncrease')):RollBonus(SkillCheck,-2);IF(HasPassive('AcrobaticsIncrease2')):RollBonus(SkillCheck,-2);IF(HasPassive('ReflexExpert')):RollBonus(SkillCheck,2);IF(HasPassive('ReflexMaster')):RollBonus(SkillCheck,4);IF(HasPassive('ReflexLegend')):RollBonus(SkillCheck,6);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c208a898-7ff4-442c-a5c4-3679c8732ff4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ACROBATICS_ROLL_TO_REFLEX_DC_CASTER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e6b89c96-6d3c-44d8-b479-d5eda506bb62" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h271cc596g93f6g3746g3fcdg4d0feeace77d" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ACROBATICS_ROLL_TO_REFLEX_DC_CASTER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="MinimumRollResult(SkillCheck,19);RollBonus(SkillCheck,-19);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dda88d46-1e9f-4b7d-aa87-032cdab9b1b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ACROBATICS_ROLL_TO_REFLEX_DC_ROLL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c208a898-7ff4-442c-a5c4-3679c8732ff4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he8b73b75gcb2eg47fag5afagfe79c4d794e1" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ACROBATICS_ROLL_TO_REFLEX_DC_ROLL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,1d20);" />
       </fields>
     </stat_object>
   </stat_objects>

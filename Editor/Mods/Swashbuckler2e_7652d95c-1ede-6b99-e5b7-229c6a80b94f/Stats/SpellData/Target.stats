@@ -259,36 +259,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fb3b75a9-cbe0-49b7-89dc-15cb75482165" />
-        <field name="Name" type="NameTableFieldDefinition" value="TumbleThroughPanache" />
-        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
-        <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="selfAcrobaticsCheck(context.Target);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(Self()):RemoveStatus(SELF,PANACHE_TEMPORARY);IF(Self()):Force(5, OriginToTarget, Friendly, true, true);IF(Self()):ApplyStatus(SELF,PANACHE,100,-1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(Self() and not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(Self() and not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);IF(Self()):UseActionResource(Movement,100%,0,true);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead();" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he414956cg7bb4gf08ega25egb732138da98e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5953e9eeg1f6egfaffga21dg848c972ed385" version="4" />
-        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="b6bebde2-ecff-4df6-9d24-cd9fabb9fe79,,;,,;f49c1788-7819-481f-9b83-2344d708e682,,;8ee67630-f1c7-441d-aaf6-fa4633c890da,,;f8fe2e89-2313-48f7-963c-0907b6306fd1,,;,,;5abe3725-c152-42de-98c8-0dbf872e1ff2,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreAoO" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="5" />
-        <field name="AoEConditions" type="StringTableFieldDefinition" value="Self();" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('DEBUG_RESET_MOVE')):ApplyStatus(STRIDE,100,1);IF(HasStatus('DEBUG_RESET_MOVE')):RemoveStatus(SELF,DEBUG_RESET_MOVE);" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('STRIDE') or HasStatus('DASH');" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:5" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_Prepare_Jump" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Loop" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Jump" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="66fed4f7-0948-4afd-82c0-0621cf2a4771" />
         <field name="Name" type="NameTableFieldDefinition" value="BonMotPanache" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
@@ -482,6 +452,27 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasStatus('DemoralizeImmune',context.Target,context.Source) and Character() and not Ally() and HasStatus('GET_USED_TO_DISAPPOINTMENT',context.Target,context.Source);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CalmEmotions" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="abf1945a-4b0e-48b5-b089-ea5cad3c629b" />
+        <field name="Name" type="NameTableFieldDefinition" value="TumbleThroughPanache" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf0ac26c8g7a5fg42d0g3572g85724e7a99f4" version="2" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="d079e170-9db7-4527-9401-4f73e1bee395,,;,,;881e6512-732b-48d1-9606-e235bcf97e50,,;313d74e5-b450-492e-a893-b51b6cb7a849,,;,,;,,;313d74e5-b450-492e-a893-b51b6cb7a849,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreAoO" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Ally() and not Dead();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4891bffbg1514g4c19gabceg48ee0b5b7105" version="1" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:5" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ACROBATICS_ROLL_TO_REFLEX_DC,100,1);" />
       </fields>
     </stat_object>
   </stat_objects>

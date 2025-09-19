@@ -2,19 +2,9 @@ Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
 DB_MovementSpell("Target_RetreatingFinisher");
+DB_MovementSpell("Projectile_JumpTumbleThrough");
 KBSECTION
-//REGION More Attack of Opportunity triggers
 
-IF
-CastSpellFailed((CHARACTER)_Char, (STRING)_Spell, _, _, _)
-AND
-QRY_CanBeOpportunityAttacked(_Char)
-AND
-_Spell == "Target_TumbleThroughPanache"
-THEN
-UseSpell(_Char,"Shout_ReactToMove",_Char,_Char,0);
-
-//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

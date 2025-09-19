@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="059cd43e-b697-4b34-8ab2-b27979c1494a" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="INVISIBLE_TRUE_technical">
-  <EffectInfo UUID="d2389ff9-467a-4999-a040-6f6159f4928c" EffectResourceGuid="72e91d03-f397-d25e-e787-a78afce91bd0" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
-</MultiEffectInfos>

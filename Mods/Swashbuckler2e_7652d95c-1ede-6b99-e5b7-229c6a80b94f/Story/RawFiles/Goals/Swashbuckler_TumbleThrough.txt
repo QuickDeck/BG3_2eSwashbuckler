@@ -1,0 +1,96 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+UsingSpellOnTarget((CHARACTER)_Player, (CHARACTER)_Target, "Target_TumbleThroughPanache", _, _, (INTEGER)_ID)
+THEN
+DB_TumbleThroughEvents(_Player, _Target, _ID);
+ApplyStatus(_Target, "ACROBATICS_ROLL_TO_REFLEX_DC", 1.0, 1);
+ApplyStatus(_Player, "ACROBATICS_ROLL_TO_REFLEX_DC_CASTER", 1.0, 1);
+ApplyStatus(_Player, "ACROBATICS_ROLL_TO_REFLEX_DC_ROLL", 1.0, 1);
+
+IF
+CastedSpell((CHARACTER)_Player, "Target_TumbleThroughPanache", _, _, (INTEGER)_ID)
+AND
+DB_TumbleThroughEvents(_Player, (CHARACTER)_Target, _ID)
+THEN
+RequestPassiveRollVersusSkill(_Player, _Target, "SkillCheck", "Acrobatics", "Acrobatics" , 0, 0, "TumbleThroughRoll");
+
+IF
+RollResult("TumbleThroughRoll", _Player, _, _, 0, _)
+AND
+DB_TumbleThroughEvents(_Player, (CHARACTER)_Target, (INTEGER)_ID)
+THEN
+RemoveStatus(_Target, "ACROBATICS_ROLL_TO_REFLEX_DC");
+RemoveStatus(_Player, "ACROBATICS_ROLL_TO_REFLEX_DC_CASTER");
+RemoveStatus(_Player, "ACROBATICS_ROLL_TO_REFLEX_DC_ROLL");
+
+IF
+RollResult("TumbleThroughRoll", _Player, _, 1, 0, _)
+AND
+DB_TumbleThroughEvents(_Player, (CHARACTER)_Target, (INTEGER)_ID)
+AND
+GetPosition(_Player, (REAL)_XP, (REAL)_YP, (REAL)_ZP)
+AND
+GetPosition(_Target, (REAL)_XT, (REAL)_YT, (REAL)_ZT)
+AND
+RealSubtract(_XT, _XP, (REAL)_XD)
+AND
+RealSubtract(_YT, _YP, (REAL)_YD)
+AND
+RealSubtract(_ZT, _ZP, (REAL)_ZD)
+AND
+RealProduct(_XD, 2.0, (REAL)_XDN)
+AND
+RealProduct(_YD, 2.0, (REAL)_YDN)
+AND
+RealProduct(_ZD, 2.0, (REAL)_ZDN)
+AND
+RealSum(_XDN, _XP, (REAL)_XPN)
+AND
+RealSum(_YDN, _YP, (REAL)_YPN)
+AND
+RealSum(_ZDN, _ZP, (REAL)_ZPN)
+THEN
+NOT DB_TumbleThroughEvents(_Player, _Target, _ID);
+UseSpellAtPosition(_Player, "Projectile_JumpTumbleThrough", _XPN, _YPN, _ZPN, 1);
+
+IF
+RollResult("TumbleThroughRoll", _Player, _, 0, 0, CRITICALITYTYPE.None)
+AND
+DB_TumbleThroughEvents(_Player, (CHARACTER)_Target, (INTEGER)_ID)
+THEN
+NOT DB_TumbleThroughEvents(_Player, _Target, _ID);
+ApplyStatus(_Player, "TUMBLE_THROUGH_PANACHE_FAILURE", 0.0, 0);
+
+IF
+RollResult("TumbleThroughRoll", _Player, _, 0, 0, CRITICALITYTYPE.Fail)
+AND
+DB_TumbleThroughEvents(_Player, (CHARACTER)_Target, (INTEGER)_ID)
+THEN
+NOT DB_TumbleThroughEvents(_Player, _Target, _ID);
+ApplyStatus(_Player, "TUMBLE_THROUGH_PANACHE_CRITFAIL", 0.0, 0);
+
+IF
+RollResult("TumbleThroughRoll", _Player, _, 0, 0, _)
+AND
+QRY_CanBeOpportunityAttacked(_Player)
+THEN
+UseSpell(_Player, "Shout_ReactToMove", _Player, _Player, 0);
+
+IF
+CastedSpell((CHARACTER)_Player, "Projectile_JumpTumbleThrough", _, _, _)
+THEN
+ApplyStatus(_Player, "TUMBLE_THROUGH_PANACHE_SUCCESS", 0.0, 0);
+
+IF
+TurnEnded(_)
+AND
+DB_TumbleThroughEvents((CHARACTER)_Player, (CHARACTER)_Target, (INTEGER)_ID)
+THEN
+NOT DB_TumbleThroughEvents(_Player, _Target, _ID);
+EXITSECTION
+
+ENDEXITSECTION

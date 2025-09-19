@@ -364,4 +364,18 @@
   <content contentuid="h73b9ca60gdfc7g3728ge7a3gf7acc924d245" version="1">Coin Halberd</content>
   <content contentuid="h1449050dg67e5g1b96gee9eg9989a0ccc652" version="1">Coin Halberd</content>
   <content contentuid="hfca811f6g8bfdgaa7dgd91dg2a1b7ad6123b" version="1">Coin Halberd</content>
+  <content contentuid="hf0ac26c8g7a5fg42d0g3572g85724e7a99f4" version="2">You try to pass through one enemy's space with an Acrobatics check against their Reflex DC. This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
+  <content contentuid="h4891bffbg1514g4c19gabceg48ee0b5b7105" version="1">Tumble Through</content>
+  <content contentuid="ha6e07bf1g55b7g5b87gcddaga79d44b8ed1e" version="1">Tumble Through Successful</content>
+  <content contentuid="hb9dc74b3g2882g4f45g3d04g67f0918f1ddd" version="1">Contains functors for successful tumble through.</content>
+  <content contentuid="h813daffbg5c93ge086gf394gec345b131b28" version="1">Tumble Through Failure</content>
+  <content contentuid="h51ba187dg2baagb347g6be6g19d932a233ee" version="1">Contains functors for unuccessful tumble through.</content>
+  <content contentuid="h2fe0ab96g8d62ge9c7gc39eg65e6af490fa0" version="1">Tumble Through Critical Failure</content>
+  <content contentuid="hd60c8bc6g543fg2df8g9e1cgd61b01e5c3cc" version="1">Contains functors for unuccessful tumble through.</content>
+  <content contentuid="hb3addca1g3887gdeb5g5acbg714174b5b6f8" version="3">Tumble Check</content>
+  <content contentuid="hb989d27dg5f06gdc77g2636geda5f4eae505" version="2">Tumble Through uses a contested skill check. This passive is given to the target to manipulate the result.</content>
+  <content contentuid="h648f2b09g218aga491gd9f3g02f397d5fa6a" version="2">Set DC Value</content>
+  <content contentuid="hd90ba74ag013egf4eag573eg6870c83ef1cc" version="2">Sets the rolled value to 10 for calcualting contested DCs.</content>
+  <content contentuid="h271cc596g93f6g3746g3fcdg4d0feeace77d" version="1">Tumble Modifier</content>
+  <content contentuid="he8b73b75gcb2eg47fag5afagfe79c4d794e1" version="1">Tumble Roll</content>
 </contentList>
