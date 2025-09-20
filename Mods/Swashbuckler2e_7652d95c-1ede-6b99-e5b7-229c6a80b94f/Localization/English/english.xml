@@ -364,7 +364,7 @@
   <content contentuid="h73b9ca60gdfc7g3728ge7a3gf7acc924d245" version="1">Coin Halberd</content>
   <content contentuid="h1449050dg67e5g1b96gee9eg9989a0ccc652" version="1">Coin Halberd</content>
   <content contentuid="hfca811f6g8bfdgaa7dgd91dg2a1b7ad6123b" version="1">Coin Halberd</content>
-  <content contentuid="hf0ac26c8g7a5fg42d0g3572g85724e7a99f4" version="2">You try to pass through one enemy's space with an Acrobatics check against their Reflex DC. This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
+  <content contentuid="hf0ac26c8g7a5fg42d0g3572g85724e7a99f4" version="5">You try to pass through one enemy's space with an Acrobatics check against their Reflex DC. This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
   <content contentuid="h4891bffbg1514g4c19gabceg48ee0b5b7105" version="1">Tumble Through</content>
   <content contentuid="ha6e07bf1g55b7g5b87gcddaga79d44b8ed1e" version="1">Tumble Through Successful</content>
   <content contentuid="hb9dc74b3g2882g4f45g3d04g67f0918f1ddd" version="1">Contains functors for successful tumble through.</content>
@@ -378,4 +378,15 @@
   <content contentuid="hd90ba74ag013egf4eag573eg6870c83ef1cc" version="2">Sets the rolled value to 10 for calcualting contested DCs.</content>
   <content contentuid="h271cc596g93f6g3746g3fcdg4d0feeace77d" version="1">Tumble Modifier</content>
   <content contentuid="he8b73b75gcb2eg47fag5afagfe79c4d794e1" version="1">Tumble Roll</content>
+  <content contentuid="he329922ag6fcag6305g8dfdg35d2906ab7ea" version="1">The Bigger They Are</content>
+  <content contentuid="hd15e4900gc365g7033gae56gc7ba5738c583" version="3">With reckless speed, you dash, jump and swing around a creature to find a more vulnerable spot. Attempt to Tumble Through a creature at least one size category larger than you. On a success, the creature gains a weakness to your precise strike damage equal to half your level until after your next attack (until the end of your turn on a critical success). This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
+  <content contentuid="h11884508gc43cg6b97g9156ge7c2f9647483" version="1">The Bigger They Are</content>
+  <content contentuid="h2f6d6c5bg15aeg7a95g1ed8g3765453820df" version="1">Weakness 6 to your precise strike damage.</content>
+  <content contentuid="hd3a1fbe3g0d78gb87cg7614g1796f2d822bb" version="1">Weakness 6 to your next attack's precise strike damage.</content>
+  <content contentuid="h00a059ddga84dg492bg87e9g58e320c2b125" version="1">The Bigger They Are</content>
+  <content contentuid="h49c58967gc5dbg1e5dg8c4dgec450ad2d6aa" version="2">With reckless speed, you dash, jump and swing around a creature to find a more vulnerable spot. Attempt to Tumble Through a creature at least one size category larger than you. On a success, the creature gains a weakness to your precise strike damage equal to half your level until after your next attack (until the end of your turn on a critical success). This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
+  <content contentuid="hec74d4aagbeb5gb04fgb527g371997f42ca5" version="1">Used The Bigger They Are successfully.</content>
+  <content contentuid="hd27099d6g8b81gf7cbgad8agab324398d223" version="2">Must target an enemy larger than yourself.</content>
+  <content contentuid="h2b888b4cg2a8eg2b6agf0d3gcdc0873bb6db" version="1">Tumble Through No Collision</content>
+  <content contentuid="h5476fde7g6ab5gc7afg5c21g07a819b96f61" version="1">Prevents tumble through user from colliding during their jump.</content>
 </contentList>

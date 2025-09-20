@@ -39,6 +39,11 @@
                     <attribute id="Identifier" type="FixedString" value="HasOneHanded"/>
                     <attribute id="UUID" type="guid" value="e2c11f2a-9a75-4ede-b8d7-021b91594fb9"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd27099d6g8b81gf7cbgad8agab324398d223" version="2"/>
+                    <attribute id="Identifier" type="FixedString" value="TheBiggerTheyAreTooSmall"/>
+                    <attribute id="UUID" type="guid" value="c294ca94-f0ef-469d-be71-d45e65f1bf73"/>
+                </node>
             </children>
         </node>
     </region>

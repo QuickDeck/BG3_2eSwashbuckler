@@ -57,5 +57,13 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h00283be8gc8b8g3980gac1eg5eb96e385d6c" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c294ca94-f0ef-469d-be71-d45e65f1bf73" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="TheBiggerTheyAreTooSmall" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd27099d6g8b81gf7cbgad8agab324398d223" version="2" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

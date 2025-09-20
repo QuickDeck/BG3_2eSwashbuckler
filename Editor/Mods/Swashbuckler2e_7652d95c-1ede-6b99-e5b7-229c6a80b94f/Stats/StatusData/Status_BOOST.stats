@@ -492,6 +492,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e50382c2-1bfd-465b-8b96-c959bb09ac41" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUMBLE_THROUGH_NO_COLLISION" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b888b4cg2a8eg2b6agf0d3gcdc0873bb6db" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5476fde7g6ab5gc7afg5c21g07a819b96f61" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="CanShootThrough(true);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e6b89c96-6d3c-44d8-b479-d5eda506bb62" />
         <field name="Name" type="NameTableFieldDefinition" value="ACROBATICS_ROLL_TO_REFLEX_DC" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3addca1g3887gdeb5g5acbg714174b5b6f8" version="3" />
@@ -523,6 +535,48 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he8b73b75gcb2eg47fag5afagfe79c4d794e1" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ACROBATICS_ROLL_TO_REFLEX_DC_ROLL" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,1d20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="630eea83-fb4d-41fe-9bb3-ce6ff214d774" />
+        <field name="Name" type="NameTableFieldDefinition" value="THE_BIGGER_THEY_ARE_WEAKNESS_CRIT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h11884508gc43cg6b97g9156ge7c2f9647483" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f6d6c5bg15aeg7a95g1ed8g3765453820df" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_OuterEntitySubjugation" />
+        <field name="StackId" type="StringTableFieldDefinition" value="THE_BIGGER_THEY_ARE_WEAKNESS" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e2cb9e5c-501b-4cf8-9241-a280a9301bf7" />
+        <field name="Name" type="NameTableFieldDefinition" value="THE_BIGGER_THEY_ARE_WEAKNESS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="630eea83-fb4d-41fe-9bb3-ce6ff214d774" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3a1fbe3g0d78gb87cg7614g1796f2d822bb" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttacked" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ea3abb9-e314-4b0b-a59e-fd5543bbd0dd" />
+        <field name="Name" type="NameTableFieldDefinition" value="THE_BIGGER_THEY_ARE_SUCCESS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3af04766-fa73-4590-951e-469c22b22dc6" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(PANACHE_TEMPORARY);ApplyStatus(PANACHE,100,-1);UseActionResource(Movement,10,0,true);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1637c789-0402-44f0-8708-6a919cb5849f" />
+        <field name="Name" type="NameTableFieldDefinition" value="THE_BIGGER_THEY_ARE_CASTER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="630eea83-fb4d-41fe-9bb3-ce6ff214d774" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hec74d4aagbeb5gb04fgb527g371997f42ca5" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="THE_BIGGER_THEY_ARE_CASTER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsPhysicalDamage() and IsMeleeAttack() and CanPrecisionDamage() and HasStatus('THE_BIGGER_THEY_ARE_WEAKNESS',context.Target)):DamageBonus(6);IF(IsPhysicalDamage() and IsMeleeAttack() and CanPrecisionDamage() and HasStatus('THE_BIGGER_THEY_ARE_WEAKNESS_CRIT',context.Target)):DamageBonus(6);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

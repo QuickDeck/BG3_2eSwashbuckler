@@ -81,15 +81,6 @@ function isStrike()
    return HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack')
 end
 
-function selfAcrobaticsCheck(entity)
-   entity = entity or context.Target
-   if context.Target.GetClassLevel('Swashbuckler2e') >= 1 then
-      st = SkillCheck(Skill.Acrobatics,15)
-      return ConditionResult(st.Result,{},{},st.Chance)
-   end
-   return ConditionResult(false)
-end
-
 function IsCriticalMissSkill()
    conditionRoll = context.HitDescription.GetLastConditionRoll(ConditionRollType.ConditionSkillCheck)
    return ConditionResult(conditionRoll.NaturalRoll == 1)
@@ -116,4 +107,18 @@ function IsCriticalMissAttack()
    conditionRoll = context.HitDescription.GetLastConditionRoll(ConditionRollType.ConditionAttack)
    return ConditionResult(conditionRoll.Total <= 1)
    | ConditionResult(conditionRoll.Total <= (conditionRoll.Difficulty - 10))
+end
+
+function TheBiggerTheyAreWrapper()
+   result = Enemy() & Character() & ~Self() & ~Dead() & ~TargetSizeEqualOrSmaller(Size.Medium);
+   return ConditionResult(result.Result, {ConditionError("TheBiggerTheyAreTooSmall")}, {})
+end
+
+-- Never used for an actual check, but provides the chance calculation for previewing, whilst actually just always
+-- returning true. This is necessary because the actual check made is via Osiris.
+function TumbleThroughProxyCheck()
+   DC = ReflexDC()
+   Bonus = context.Source.GetPassiveSkill(Skill.Acrobatics) - 10
+   Chance = (21 + Bonus - DC) / 20
+   return ConditionResult(true, {}, {}, Chance)
 end

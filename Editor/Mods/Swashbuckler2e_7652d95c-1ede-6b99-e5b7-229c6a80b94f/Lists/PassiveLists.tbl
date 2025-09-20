@@ -47,7 +47,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="31b3093f-e08b-4f81-bcf6-7aa319cd9644" />
         <field name="Name" type="NameTableFieldDefinition" value="Swashbuckler Level 12 Class Feats" />
-        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,CheatDeath,GetUsedToDisappointment,MobileFinisher,Derringdo,ReflexiveRiposte,StumblingFinisher,TargetingFinisher,BleedingFinisher,DualFinisher,StunningFinisher,VivaciousBravado,AgileManeuvers,CombinationFinisher,PreciseFinisher,ReactiveStrike,DastardlyDash,EvenTheOdds,GuardiansDeflection,ImpalingFinisher,AfterYou,Antagonize,CharmedLife,FinishingFollowthrough,RetreatingFinisher,UnbalancingFinisher,DisarmingFlair,ExtravagantParry,FlashyDodge,GoadingFeint,OneForAll,YoureNext" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,CheatDeath,GetUsedToDisappointment,MobileFinisher,TheBiggerTheyAre,Derringdo,ReflexiveRiposte,StumblingFinisher,TargetingFinisher,BleedingFinisher,DualFinisher,StunningFinisher,VivaciousBravado,AgileManeuvers,CombinationFinisher,PreciseFinisher,ReactiveStrike,DastardlyDash,EvenTheOdds,GuardiansDeflection,ImpalingFinisher,AfterYou,Antagonize,CharmedLife,FinishingFollowthrough,RetreatingFinisher,UnbalancingFinisher,DisarmingFlair,ExtravagantParry,FlashyDodge,GoadingFeint,OneForAll,YoureNext" />
       </fields>
     </stat_object>
   </stat_objects>
