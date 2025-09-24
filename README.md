@@ -3,7 +3,7 @@ Implements the Swashbuckler for the PF2e Baldur's Gate 3 mod.
 https://mod.io/g/baldursgate3/m/swashbuckler-pf2e
 
 **Features**
-- Tumble Through is quite janky, but works more or less. Can be very difficult to find valid jump paths for enemies that aren't short. 
+- Tumble Through now works well, but do be wary of trying to tumble through enemies stood next to chasms.
 - An elegant panache system, which handles the interaction between the permanent panache granted on successes and the temporary panache granted on failures.
 - Braggart, Fencer, Gymnast, Rascal, and Wit are implemented in full.
 - There are at least 4 implemented feats for each level except 12, so there should be plenty to choose from throughout your playthroughs.
