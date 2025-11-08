@@ -67,30 +67,8 @@ function WieldingOneHandedWeapon(entity)
    return ConditionResult(IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Spears|Morningstars|Warpicks|Tridents|Flails|Maces|LightHammers|Clubs|Warhammers|Quarterstaffs|Scimitars|Longswords|Handaxes', weaponEntity).Result, {ConditionError("NeedsOneHanded")}, {ConditionError("HasOneHanded")})
 end
 
--- Used to determine if extravagant parry should grant +2
-function WieldingSingleOneHandedWeapon(entity)
-   entity = entity or context.Target
-   local weaponEntity = GetActiveWeapon(entity, true)
-   return IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Spears|Morningstars|Warpicks|Tridents|Flails|Maces|LightHammers|Clubs|Warhammers|Quarterstaffs|Scimitars|Longswords|Handaxes', weaponEntity)
-   & (~WieldingWeapon('Melee', true, false, entity))
-   & (~WieldingWeapon('Range', true, false, entity))
-   & ~HasShieldEquipped()
-end
-
 function isStrike()
    return HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack')
-end
-
-function IsCriticalMissSkill()
-   conditionRoll = context.HitDescription.GetLastConditionRoll(ConditionRollType.ConditionSkillCheck)
-   return ConditionResult(conditionRoll.NaturalRoll == 1)
-   | ConditionResult(conditionRoll.Total <= (conditionRoll.Difficulty - 10))
-end
-
-function IsCriticalSkill()
-   conditionRoll = context.HitDescription.GetLastConditionRoll(ConditionRollType.ConditionSkillCheck)
-   return ConditionResult(conditionRoll.NaturalRoll == 20)
-   | ConditionResult(conditionRoll.Total >= (conditionRoll.Difficulty + 10))
 end
 
 function IsMissSkill()

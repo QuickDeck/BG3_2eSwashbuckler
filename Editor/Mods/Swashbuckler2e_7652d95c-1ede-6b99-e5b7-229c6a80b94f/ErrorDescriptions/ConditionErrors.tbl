@@ -65,5 +65,13 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd27099d6g8b81gf7cbgad8agab324398d223" version="2" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="847dcc9d-eba4-4236-9460-8a948d2cd32b" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="PanacheWeapon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h71711b90ge7f5g4bfcg3b70g41795349e628" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

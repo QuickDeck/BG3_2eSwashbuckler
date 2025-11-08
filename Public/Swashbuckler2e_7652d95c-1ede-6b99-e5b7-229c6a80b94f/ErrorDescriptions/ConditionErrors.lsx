@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="400"/>
+    <version major="4" minor="8" revision="0" build="500"/>
     <region id="ConditionErrors">
         <node id="root">
             <children>
@@ -43,6 +43,11 @@
                     <attribute id="DisplayName" type="TranslatedString" handle="hd27099d6g8b81gf7cbgad8agab324398d223" version="2"/>
                     <attribute id="Identifier" type="FixedString" value="TheBiggerTheyAreTooSmall"/>
                     <attribute id="UUID" type="guid" value="c294ca94-f0ef-469d-be71-d45e65f1bf73"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h71711b90ge7f5g4bfcg3b70g41795349e628" version="1"/>
+                    <attribute id="Identifier" type="FixedString" value="PanacheWeapon"/>
+                    <attribute id="UUID" type="guid" value="847dcc9d-eba4-4236-9460-8a948d2cd32b"/>
                 </node>
             </children>
         </node>

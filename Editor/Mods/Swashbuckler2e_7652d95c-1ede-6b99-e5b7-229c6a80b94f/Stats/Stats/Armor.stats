@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="239de60a-29b5-4010-bf7d-f6169d4ddd8a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e9fc0818-e4cc-434f-8887-ab522c82dca3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARM_Swashbuckler" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2c63465a-c3ac-4cbd-9192-3a7b007383a7" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="5b8c8bc3-bd27-4e03-9493-f1f155e5031d" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

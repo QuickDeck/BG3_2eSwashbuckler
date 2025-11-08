@@ -389,4 +389,6 @@
   <content contentuid="hd27099d6g8b81gf7cbgad8agab324398d223" version="2">Must target an enemy larger than yourself.</content>
   <content contentuid="h2b888b4cg2a8eg2b6agf0d3gcdc0873bb6db" version="1">Tumble Through No Collision</content>
   <content contentuid="h5476fde7g6ab5gc7afg5c21g07a819b96f61" version="1">Prevents tumble through user from colliding during their jump.</content>
+  <content contentuid="h5166975fgcaf7geaebg26c2gb9df46d8df4d" version="1">Simple Jerkin</content>
+  <content contentuid="h71711b90ge7f5g4bfcg3b70g41795349e628" version="1">Must be wielding an Agile or Finesse weapon.</content>
 </contentList>

@@ -10,6 +10,7 @@
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_OpeningAttack" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConfidentFinisher);" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -21,8 +22,9 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(SwashbucklerPrecisionDamage);LevelMapValue(SwashbucklerPrecisionDamageFinisher)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_SneakAttack_Melee" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsPhysicalDamage() and IsMeleeAttack() and IsHit() and not IsFinisher() and CanPrecisionDamage()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamage));IF(IsPhysicalDamage() and IsMeleeAttack() and IsHit() and IsFinisher() and CanPrecisionDamage()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamageFinisher));" />
-        <field name="TooltipConditionalDamage" type="StringTableFieldDefinition" value="IF(IsPhysicalDamage() and IsMeleeAttack() and not IsFinisher()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamage));&#xD;&#xA;IF(IsPhysicalDamage() and IsMeleeAttack() and IsFinisher()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamageFinisher));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(SneakAttackWeapon() and IsPhysicalDamage() and IsMeleeAttack() and IsHit() and not IsFinisher() and CanPrecisionDamage()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamage));IF(SneakAttackWeapon() and IsPhysicalDamage() and IsMeleeAttack() and IsHit() and IsFinisher() and CanPrecisionDamage()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamageFinisher));" />
+        <field name="TooltipConditionalDamage" type="StringTableFieldDefinition" value="IF(SneakAttackWeapon() and IsPhysicalDamage() and IsMeleeAttack() and not IsFinisher()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamage));&#xD;&#xA;IF(SneakAttackWeapon() and IsPhysicalDamage() and IsMeleeAttack() and IsFinisher()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamageFinisher));" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="f87d7b0e-bc56-4f22-b347-9ef63bfa5220" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

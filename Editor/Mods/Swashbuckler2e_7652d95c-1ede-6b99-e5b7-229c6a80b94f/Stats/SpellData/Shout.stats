@@ -6,7 +6,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5f44c5a8-06c7-4750-b1c1-41b216e6f8ad" />
         <field name="Name" type="NameTableFieldDefinition" value="ExtravagantParry" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="33f516a2-5385-46f0-aecf-11c8450e0d05" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(WieldingOneHandedWeapon(context.Source) and not WieldingSingleOneHandedWeapon(context.Source)):ApplyStatus(SELF,EXTRAVAGANT_PARRY_1,100,1);IF(WieldingSingleOneHandedWeapon(context.Source)):ApplyStatus(SELF,EXTRAVAGANT_PARRY_2,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(WieldingOneHandedWeapon(context.Source) and not HasFreeHand()):ApplyStatus(SELF,EXTRAVAGANT_PARRY_1,100,1);IF(HasFreeHand()):ApplyStatus(SELF,EXTRAVAGANT_PARRY_2,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h63498dabgbe43g9c23g0fe4g5e4099cf14e5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9f98897egb71cgec63g45e9gb516f68b90e8" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXTRAVAGANT_PARRY_1,100,1);" />

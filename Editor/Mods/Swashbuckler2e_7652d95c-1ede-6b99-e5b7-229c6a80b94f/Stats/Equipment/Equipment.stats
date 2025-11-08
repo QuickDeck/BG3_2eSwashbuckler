@@ -11,7 +11,7 @@
         <field name="4" type="StatReferenceTableFieldDefinition" value="OBJ_GreaseBottle" />
         <field name="5" type="StatReferenceTableFieldDefinition" value="OBJ_GreaseBottle" />
         <field name="6" type="StatReferenceTableFieldDefinition" value="ARM_Shoes" />
-        <field name="7" type="StatReferenceTableFieldDefinition" value="ARM_Bard" />
+        <field name="7" type="StatReferenceTableFieldDefinition" value="ARM_Swashbuckler" />
         <field name="8" type="StatReferenceTableFieldDefinition" value="OBJ_Scroll_Revivify" />
         <field name="InitialWeaponSet" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="WeaponSet" version="1" />
         <field name="9" type="StatReferenceTableFieldDefinition" value="OBJ_Keychain" />
