@@ -174,15 +174,14 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3273bb58-f0d3-4f58-8b20-ad2a378895d0" />
         <field name="Name" type="NameTableFieldDefinition" value="ANTAGONIZE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb003499ag71cdg832eg3243gb850c2ac6b73" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e94a27ag2747gaf8ag4379g51a5b7bf7384" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e94a27ag2747gaf8ag4379g51a5b7bf7384" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Status_Frightened" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Frightened" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Frightened" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ANTAGONIZE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(STAT_PEN_1ATTACK);Tag(STAT_PEN_1AC);Tag(STAT_PEN_1DC);Tag(STAT_PEN_1SAVES);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;OverheadOnTurn" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('ANTAGONIZE',context.Observer,context.Source)" />
         <field name="Passives" type="StringTableFieldDefinition" value="AntagonizeTarget;" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

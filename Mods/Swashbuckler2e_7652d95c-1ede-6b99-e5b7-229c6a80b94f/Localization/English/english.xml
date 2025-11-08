@@ -189,7 +189,7 @@
   <content contentuid="haa25b360gee7dgbadag4c9fg5127e2ad57c8" version="1">Flashy Dodge</content>
   <content contentuid="h4b52fab0gb782g9335g4e9bge91ad64054df" version="2">You deftly dodge out of the way of a strike you can see, gaining a +2 circumstance bonus to AC against the triggering attack. If the strike misses, you gain &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt; until the end of your next turn.</content>
   <content contentuid="hb003499ag71cdg832eg3243gb850c2ac6b73" version="2">Antagonized</content>
-  <content contentuid="h1e94a27ag2747gaf8ag4379g51a5b7bf7384" version="2">-1 status penalty to all attacks and DCs until it makes a strike against the source.</content>
+  <content contentuid="h1e94a27ag2747gaf8ag4379g51a5b7bf7384" version="3">Frightened value can't reduce below 1 until this creature attacks the source of its fear.</content>
   <content contentuid="h41295ab4g0652gf909gdfe3g33e27ae4f207" version="1">Charmed Life</content>
   <content contentuid="h77f38b69g043dgd2f3gac01gad75d12540ae" version="2">When danger calls, you have a strange knack for coming out on top. You gain a +2 circumstance bonus to the triggering save. If you succeed on the triggering saving throw, you gain &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt; until the end of your next turn.</content>
   <content contentuid="hdfae08f1g99c3gdeafg66f5g47f6c4722df5" version="1">Charmed Life</content>
@@ -297,7 +297,7 @@
   <content contentuid="h02fa0992g4241g0f49ga578g61210211760b" version="1">One for All</content>
   <content contentuid="h97d28e53g0e4ag6c6bg0228gcb46affc6cc6" version="3">With precisely the right words of encouragement, you bolster an ally's efforts. Designate an ally within 30 feet; this action counts as sufficient preparation to Aid that ally. When you use the Aid reaction to help that ally, you can roll Diplomacy and you may gain &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
   <content contentuid="hbd648e6ega93dg36b7g1a61g8922534c8d33" version="1">Antagonize</content>
-  <content contentuid="h69c6cfc3g9069g7deagdc39g9dc126f26e81" version="1">Your taunts and threats earn your foes' ire. When you successfully Demoralize a creature, its frightened condition can't decrease to less than 1 at the end of its turn until it either uses a hostile action against you</content>
+  <content contentuid="h69c6cfc3g9069g7deagdc39g9dc126f26e81" version="2">Your taunts and threats earn your foes' ire. When you successfully Demoralize a creature, its frightened condition can't decrease to less than 1 at the end of its turn until it uses a hostile action against you.</content>
   <content contentuid="h9320c36bg4122gd6c1g1509g166119f3e91f" version="1">Must be a different target to the first strike.</content>
   <content contentuid="h447773c1g2016g6fc3g0badgca16a64d9648" version="1">Dual Finisher Remove</content>
   <content contentuid="h7862bd6dge11ag829ag2181g2e4313138774" version="1">Removes the mark on the first target of Dual Finisher</content>
@@ -341,7 +341,7 @@
   <content contentuid="ha89e2110g66c8g9becg67ecgbd8aba00409c" version="1">Goaded</content>
   <content contentuid="h783c3cecg610cgbce2gf2c6g2a7d18ac23d1" version="1">Minus 2 Circumsatance penalty to the next attack against the source of this status.</content>
   <content contentuid="h81d91f98g5617g1c7bg0b3cg2277ed971b0d" version="1">Antagonized</content>
-  <content contentuid="h4aa45e6cge429gd6c9g5cbcg16c9e091daa3" version="1">-1 status penalty to all attacks and DCs until you make a strike against the source.</content>
+  <content contentuid="h4aa45e6cge429gd6c9g5cbcg16c9e091daa3" version="2">Frightened value can't reduce below 1 until this creature attacks the source of its fear.</content>
   <content contentuid="hfc66cfe2gd9d0ga1efg30b2g3ba0b2d4a64d" version="1">Antagonize</content>
   <content contentuid="h14c9f951gd2d4g8f2eg6382g02851cd2011f" version="1">Your taunts and threats earn your foes' ire. When you successfully Demoralize a creature, its frightened condition can't decrease to less than 1 at the end of its turn until it either uses a hostile action against you</content>
   <content contentuid="hda42db29g938fg06c6gf24ag4aca769577dd" version="1">Combination Finisher</content>
@@ -391,4 +391,7 @@
   <content contentuid="h5476fde7g6ab5gc7afg5c21g07a819b96f61" version="1">Prevents tumble through user from colliding during their jump.</content>
   <content contentuid="h5166975fgcaf7geaebg26c2gb9df46d8df4d" version="1">Simple Jerkin</content>
   <content contentuid="h71711b90ge7f5g4bfcg3b70g41795349e628" version="1">Must be wielding an Agile or Finesse weapon.</content>
+  <content contentuid="hd2d3e832g7351g18ffg8994gf326b3c9ca2e" version="1">Demoralize</content>
+  <content contentuid="h88afbeb2g2ca1g3aa7g2142g6cd3ffc18302" version="1">Attempt an Intimidation check and make a target frightened 1 on a success.</content>
+  <content contentuid="h1246a4aeg7cdbg09d0g8e1bgd5838fe84eb5" version="1">Intimidation vs Will DC.</content>
 </contentList>

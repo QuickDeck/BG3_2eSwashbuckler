@@ -494,9 +494,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a651aa94-3d3f-4a72-8a2b-8d1b7c064a84" />
         <field name="Name" type="NameTableFieldDefinition" value="Antagonize" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd648e6ega93dg36b7g1a61g8922534c8d33" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h69c6cfc3g9069g7deagdc39g9dc126f26e81" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h69c6cfc3g9069g7deagdc39g9dc126f26e81" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Antagonize);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -550,7 +549,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e78a7acf-e941-4806-858c-bcc8a4396b2d" />
         <field name="Name" type="NameTableFieldDefinition" value="AntagonizeTarget" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81d91f98g5617g1c7bg0b3cg2277ed971b0d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4aa45e6cge429gd6c9g5cbcg16c9e091daa3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4aa45e6cge429gd6c9g5cbcg16c9e091daa3" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('Antagonize',context.Target) and IsAttack();" />

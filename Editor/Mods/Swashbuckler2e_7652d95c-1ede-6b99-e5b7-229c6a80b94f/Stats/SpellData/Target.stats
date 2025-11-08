@@ -239,7 +239,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DemoralizePanache" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fb0099d2-b1d9-4c62-8810-6a9c78c09170" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value=";" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE_TEMPORARY);IF(IsCriticalSkill()):ApplyStatus(FRIGHTENED,100,2);IF(not IsCriticalSkill()):ApplyStatus(FRIGHTENED,100,1);ApplyStatus(SELF,PANACHE,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE_TEMPORARY);IF(IsCriticalSkill()):ApplyStatus(FRIGHTENED,100,2);IF(not IsCriticalSkill()):ApplyStatus(FRIGHTENED,100,1);IF(HasPassive('Antagonize',context.Source)):ApplyStatus(ANTAGONIZE,100,-1);ApplyStatus(SELF,PANACHE,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfbde0192g5fc3g7068g6d44g5e7509af4cae" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2809c585gf0f1ge9cege753g4c6ef9ef81e5" version="2" />
@@ -449,6 +449,42 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he329922ag6fcag6305g8dfdg35d2906ab7ea" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd15e4900gc365g7033gae56gc7ba5738c583" version="3" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb0099d2-b1d9-4c62-8810-6a9c78c09170" />
+        <field name="Name" type="NameTableFieldDefinition" value="Demoralize" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.Intimidation,DemoralizeDC());" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(SkillCrit()):ApplyStatus(FRIGHTENED,100,2);ApplyStatus(FRIGHTENED,100,1);IF(HasPassive('Antagonize',context.Source)):ApplyStatus(ANTAGONIZE,100,-1);AI_ONLY:DealDamage(2d6,Psychic);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd2d3e832g7351g18ffg8994gf326b3c9ca2e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88afbeb2g2ca1g3aa7g2142g6cd3ffc18302" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,1)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasStatus('DemoralizeImmune',context.Target,context.Source) and Character() and not Ally() and not HasStatus('FRIGHTENED') and not Tagged('MINDLESS');" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SkillActions" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_IntimidatingPresence" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="ff78157b-f004-4813-b6d7-83744a7a56e4,,;,,;6bac9e6f-c3c6-489f-8d39-2df012b3e40b,,;aec7ed45-2dec-4ee6-b5dc-6403a87a1aad,,;34da5af5-71b6-4278-9cc0-d5266ca98876,,;,,;32eb3c27-cd2c-49c1-a6c6-b21b2cccf050,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="79cab826-6ec4-4512-837f-278d0fc94394" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="6f7d94a8-e808-49ec-b7be-3a1f02a51df7" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="57593949-e63b-4b31-8b3b-5039ed5ed1cf" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DemoralizeImmune,100,100);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('BEAST') and not Tagged('INTELLECT_DEVOURER') and not HasStatus('RAGE_MUTE') or HasPassive('RagingIntimidation');" />
+        <field name="TooltipSpellDCAbilities" type="EnumerationListTableFieldDefinition" value="Charisma" enumeration_type_name="AbilityFlags" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Rogue_ViciousMockery" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Rogue_ViciousMockery" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Impact_Rogue_ViciousMockery" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_ViciousMockery" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h1246a4aeg7cdbg09d0g8e1bgd5838fe84eb5" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="0da84949-2469-439b-b28e-06e7b33a52b1" />
+        <field name="RechargeValues" type="StringTableFieldDefinition" value="1-3" />
       </fields>
     </stat_object>
   </stat_objects>

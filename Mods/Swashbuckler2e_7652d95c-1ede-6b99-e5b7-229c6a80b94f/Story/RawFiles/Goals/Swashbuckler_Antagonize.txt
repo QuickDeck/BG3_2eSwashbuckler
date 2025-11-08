@@ -1,0 +1,18 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//REGION Antagonize prevents Frightened reducing past 1
+
+IF
+StatusRemoved((GUIDSTRING)_Character, "FRIGHTENED", (GUIDSTRING)_Causee, _)
+AND
+HasActiveStatus(_Character, "ANTAGONIZE", 1)
+THEN
+ApplyStatus(_Character, "FRIGHTENED", 6.0, 0, _Causee);
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

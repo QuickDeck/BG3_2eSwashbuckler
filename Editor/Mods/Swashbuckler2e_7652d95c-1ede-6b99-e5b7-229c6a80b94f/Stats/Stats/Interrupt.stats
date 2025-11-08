@@ -153,21 +153,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="73c73670-4769-4771-99d2-2746cbd94e1c" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Antagonize" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfc66cfe2gd9d0ga1efg30b2g3ba0b2d4a64d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h14c9f951gd2d4g8f2eg6382g02851cd2011f" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
-        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="(SpellId('Target_Demoralize') or SpellId('Target_DemoralizePanache')) and ConditionResult(context.InterruptedRoll.Total &gt;= context.InterruptedRoll.Difficulty);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,ANTAGONIZE,100,-1);" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e5509608-d20c-4f7a-9ad2-9dc98d2cf272" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CombinationFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hda42db29g938fg06c6gf24ag4aca769577dd" version="1" />
