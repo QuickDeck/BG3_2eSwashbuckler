@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="400"/>
+    <version major="4" minor="8" revision="0" build="500"/>
     <region id="Progressions">
         <node id="root">
             <children>
@@ -39,7 +39,7 @@
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(c4b29d1c-8ca7-49f5-9862-cf92ad456d84,1,ClassFeat)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(c4b29d1c-8ca7-49f5-9862-cf92ad456d84,1,ClassFeat);SelectPassives(0b29f065-a17d-4944-a183-880baaa11401,1,SkillFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="a5b3d0cd-4fa9-4a45-9b10-ba7171775dcf"/>
                 </node>
@@ -56,7 +56,7 @@
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(ec82f551-f02a-4c97-b947-0de7e431a8a6,1,ClassFeat)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ec82f551-f02a-4c97-b947-0de7e431a8a6,1,ClassFeat);SelectPassives(0b29f065-a17d-4944-a183-880baaa11401,1,SkillFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="aada8511-c0d8-499c-903e-6058f9e64b28"/>
                 </node>
@@ -73,7 +73,7 @@
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(4e64619c-eb0e-4842-96ca-6de3f8be1386,1,ClassFeat)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(4e64619c-eb0e-4842-96ca-6de3f8be1386,1,ClassFeat);SelectPassives(0b29f065-a17d-4944-a183-880baaa11401,1,SkillFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="75a84f57-20a6-4315-89fd-157e7b3c65b1"/>
                 </node>
@@ -91,7 +91,7 @@
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(a87eb3be-bbf0-44d2-9194-b7a3b6467b72,1,ClassFeat)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(a87eb3be-bbf0-44d2-9194-b7a3b6467b72,1,ClassFeat);SelectPassives(218a9472-75d8-4b85-8aba-7f9d9f628dca,1,SkillFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="11e52053-0c27-484f-9af4-de316d60bc00"/>
                 </node>
@@ -108,7 +108,7 @@
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(d9491aac-fd17-4ad2-8801-aadb3e906b59,1,ClassFeat)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(d9491aac-fd17-4ad2-8801-aadb3e906b59,1,ClassFeat);SelectPassives(218a9472-75d8-4b85-8aba-7f9d9f628dca,1,SkillFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="f1ff6ed5-a830-44aa-889c-4e5118d69859"/>
                 </node>
@@ -125,7 +125,7 @@
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(31b3093f-e08b-4f81-bcf6-7aa319cd9644,1,ClassFeat)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(31b3093f-e08b-4f81-bcf6-7aa319cd9644,1,ClassFeat);SelectPassives(218a9472-75d8-4b85-8aba-7f9d9f628dca,1,SkillFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="5fa81d7d-a4c2-4b5d-935e-df41261add3d"/>
                 </node>

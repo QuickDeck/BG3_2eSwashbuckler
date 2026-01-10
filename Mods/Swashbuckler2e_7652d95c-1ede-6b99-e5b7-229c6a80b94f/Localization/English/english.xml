@@ -394,4 +394,5 @@
   <content contentuid="hd2d3e832g7351g18ffg8994gf326b3c9ca2e" version="1">Demoralize</content>
   <content contentuid="h88afbeb2g2ca1g3aa7g2142g6cd3ffc18302" version="1">Attempt an Intimidation check and make a target frightened 1 on a success.</content>
   <content contentuid="h1246a4aeg7cdbg09d0g8e1bgd5838fe84eb5" version="1">Intimidation vs Will DC.</content>
+  <content contentuid="hecdd7021g8f4aga6a6g51d2g6517f85104b6" version="1">Whilst moving, you can try to move through the space of one enemy. Attempt an Acrobatics check against the enemy's Reflex DC as soon as you try to enter its space. On a success, you move through its space as though it were difficult terrain. On a failure, your movement ends, and you trigger reactions as if you had moved out of the space you started in. This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
 </contentList>

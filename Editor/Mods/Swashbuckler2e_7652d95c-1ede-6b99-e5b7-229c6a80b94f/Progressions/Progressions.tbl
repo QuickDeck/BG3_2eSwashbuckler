@@ -23,7 +23,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler2e" />
         <field name="Level" type="ByteTableFieldDefinition" value="2" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(c4b29d1c-8ca7-49f5-9862-cf92ad456d84,1,ClassFeat)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(c4b29d1c-8ca7-49f5-9862-cf92ad456d84,1,ClassFeat);SelectPassives(0b29f065-a17d-4944-a183-880baaa11401,1,SkillFeat)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -46,7 +46,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler2e" />
         <field name="Level" type="ByteTableFieldDefinition" value="4" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ec82f551-f02a-4c97-b947-0de7e431a8a6,1,ClassFeat)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ec82f551-f02a-4c97-b947-0de7e431a8a6,1,ClassFeat);SelectPassives(0b29f065-a17d-4944-a183-880baaa11401,1,SkillFeat)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -69,7 +69,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler2e" />
         <field name="Level" type="ByteTableFieldDefinition" value="6" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(4e64619c-eb0e-4842-96ca-6de3f8be1386,1,ClassFeat)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(4e64619c-eb0e-4842-96ca-6de3f8be1386,1,ClassFeat);SelectPassives(0b29f065-a17d-4944-a183-880baaa11401,1,SkillFeat)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -93,7 +93,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler2e" />
         <field name="Level" type="ByteTableFieldDefinition" value="8" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(a87eb3be-bbf0-44d2-9194-b7a3b6467b72,1,ClassFeat)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(a87eb3be-bbf0-44d2-9194-b7a3b6467b72,1,ClassFeat);SelectPassives(218a9472-75d8-4b85-8aba-7f9d9f628dca,1,SkillFeat)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -116,7 +116,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler2e" />
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(d9491aac-fd17-4ad2-8801-aadb3e906b59,1,ClassFeat)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(d9491aac-fd17-4ad2-8801-aadb3e906b59,1,ClassFeat);SelectPassives(218a9472-75d8-4b85-8aba-7f9d9f628dca,1,SkillFeat)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -139,7 +139,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler2e" />
         <field name="Level" type="ByteTableFieldDefinition" value="12" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(31b3093f-e08b-4f81-bcf6-7aa319cd9644,1,ClassFeat)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(31b3093f-e08b-4f81-bcf6-7aa319cd9644,1,ClassFeat);SelectPassives(218a9472-75d8-4b85-8aba-7f9d9f628dca,1,SkillFeat)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
