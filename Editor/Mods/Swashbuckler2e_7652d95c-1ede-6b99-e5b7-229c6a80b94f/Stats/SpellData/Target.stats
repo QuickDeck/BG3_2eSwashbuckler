@@ -13,7 +13,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5ef5a3cg9418ge17dg3b5fg13649fa2ea82" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6f5b8a8fg4b6ega432gc799gc08c43bdf3f4" version="2" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeWeaponAttack);" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value=";" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_PiercingThrust" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_PiercingThrust" />
@@ -75,7 +75,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DualFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9684a093-cd95-40d3-b86a-dc10aa694a74" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and CanUseWeaponActions() and DualWielder(context.Source) and ConditionResult(WieldingSneakAttackWeapon(context.Source).Result, {ConditionError('PanacheWeapon')});" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack);CastOffhand[Attack(AttackType.MeleeOffHandWeaponAttack)]" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeWeaponAttack);CastOffhand[Attack2e(AttackType.MeleeOffHandWeaponAttack)]" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(DUAL_FINISHER_HELPER,100,1);ApplyStatus(SELF,DUAL_FINISHER_FREE_STRIKE,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd27837dcge442gdcddgede8g53fba6c926dc" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h73cc2a96g5e09gc4b9g948cgf13942f35ab2" version="1" />
@@ -170,7 +170,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="9684a093-cd95-40d3-b86a-dc10aa694a74" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ExecuteWeaponFunctors(OffHand)];" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('DUAL_FINISHER_FREE_STRIKE') and CanUseWeaponActions();" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="CastOffhand[Attack(AttackType.MeleeOffHandWeaponAttack)]" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="CastOffhand[Attack2e(AttackType.MeleeOffHandWeaponAttack)]" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="CastOffhand[DealDamage(max(0,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not HasStatus('DUAL_FINISHER_HELPER');" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec668cbbgddc4gf435gdeb4gdd6162c31f40" version="1" />
@@ -188,7 +188,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7f3d7754-2ec5-42e6-85de-cad20cc2302e" />
         <field name="Name" type="NameTableFieldDefinition" value="OpportuneRiposte" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeWeaponAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE_TEMPORARY);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(SELF,PANACHE,100,-1);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Riposte" />
@@ -290,7 +290,7 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and (HasStatus('STRIDE') or HasStatus('DASH')) and CanUseWeaponActions();" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeWeaponAttack);" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush_New" />
