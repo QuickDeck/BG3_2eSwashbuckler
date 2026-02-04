@@ -5,18 +5,29 @@ local __util = require 'larian.util'
 -- Centralise the list of finisher functions
 function IsFinisher()
    return SpellId('Target_ConfidentFinisher')
+   | SpellId('Target_ConfidentFinisher_OffHand')
    | SpellId('Target_RetreatingFinisher')
+   | SpellId('Target_RetreatingFinisher_OffHand')
    | SpellId('Target_UnbalancingFinisher')
+   | SpellId('Target_UnbalancingFinisher_OffHand')
    | SpellId('Zone_ImpalingFinisher')
+   | SpellId('Zone_ImpalingFinisher_OffHand')
    | SpellId('Target_BleedingFinisher')
+   | SpellId('Target_BleedingFinisher_OffHand')
    | SpellId('Target_DualFinisher')
    | SpellId('Target_DualFinisherFreeStrike')
    | SpellId('Target_StunningFinisher')
+   | SpellId('Target_StunningFinisher_OffHand')
    | SpellId('Target_StumblingFinisher')
+   | SpellId('Target_StumblingFinisher_OffHand')
    | SpellId('Target_TargetingFinisherArm')
    | SpellId('Target_TargetingFinisherHead')
    | SpellId('Target_TargetingFinisherLeg')
+   | SpellId('Target_TargetingFinisherArm_OffHand')
+   | SpellId('Target_TargetingFinisherHead_OffHand')
+   | SpellId('Target_TargetingFinisherLeg_OffHand')
    | SpellId('Target_MobileFinisher')
+   | SpellId('Target_MobileFinisher_OffHand')
 end
 
 function IsBravado()
@@ -92,11 +103,21 @@ function TheBiggerTheyAreWrapper()
    return ConditionResult(result.Result, {ConditionError("TheBiggerTheyAreTooSmall")}, {})
 end
 
--- Never used for an actual check, but provides the chance calculation for previewing, whilst actually just always
--- returning true. This is necessary because the actual check made is via Osiris.
-function TumbleThroughProxyCheck()
-   DC = ReflexDC()
-   Bonus = context.Source.GetPassiveSkill(Skill.Acrobatics) - 10
-   Chance = (21 + Bonus - DC) / 20
-   return ConditionResult(true, {}, {}, Chance)
+function PreciseStrikeWeapon(entity, weapon)
+   entity = entity or context.Source
+   weapon = weapon or context.AttackWeapon
+   
+   -- Agile or finesse
+   local standard_weapon = (HasWeaponProperty(WeaponProperties.Light, weapon) | HasWeaponProperty(WeaponProperties.Finesse, weapon)) & IsPhysicalDamage() & IsMeleeAttack()
+   
+   return IsMeleeUnarmedAttack() | standard_weapon
+end
+
+function WieldingPreciseStrikeWeapon(entity, mainHand)
+   entity = entity or context.Target
+   
+   -- Agile or finesse
+   local standard_weapon = WieldingWeapon('Finesse', mainHand, false, entity) | WieldingWeapon('Light', mainHand, false, entity)
+   
+   return ConditionResult(standard_weapon.Result, {ConditionError('PanacheWeapon')})
 end

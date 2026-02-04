@@ -49,7 +49,7 @@
   <content contentuid="h73264765gd961g2677g1196g0d09a6a519d6" version="1">You perform swashbuckling techniques with exceptional flair, making them harder to resist. Your circumstance bonus from Stylish Combatant increases to +2</content>
   <content contentuid="hce20fbb6g1ebdgb705g1f0cg77e961a2a467" version="1">Continuous Flair</content>
   <content contentuid="h4c15b289gfd35g8235gd44cg03d995700557" version="1">You have a dramatic flair about you in any situation. Your circumstance bonus from Stylish Combatant applies to all checks made with Acrobatics and the trained skill from your swashbuckler's style.</content>
-  <content contentuid="hfb54ca7ag3c16gde0eg361cg1971a6633485" version="1">Circumstance Bonus (Skills)</content>
+  <content contentuid="hfb54ca7ag3c16gde0eg361cg1971a6633485" version="2">Circumstance Bonus (Bravado Skills)</content>
   <content contentuid="h3f1c1cc9g8675gfd52g45ddgeff9057b60fb" version="2">+1 circumstance bonus to bravado skill checks</content>
   <content contentuid="hff46984egdec2gf328g328bg7644cba531b2" version="2">+2 circumstance bonus to bravado skill checks</content>
   <content contentuid="h9b993fcfg9aacg27dfgfddegcb816c252dac" version="1">+2 circumstance bonus to bravado skill checks</content>
@@ -242,7 +242,7 @@
   <content contentuid="hd18b4564gc3c4g98fag071ag6edc401a43ec" version="1">Rascal Dirty Trick</content>
   <content contentuid="h3e497c76g3f19gc35dg8f05gaa1bed9aeee0" version="2">You gain the Dirty Trick action. It has the bravado trait for you and can be used to gain &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
   <content contentuid="h9f82c5f4g44c7g46e0g5d2dg806c331dad64" version="1">Mobile Finisher</content>
-  <content contentuid="h9bc41044g4d9cgabdfg927cg678f3023e10c" version="1">You attack in motion. Stride and then Strike.</content>
+  <content contentuid="h9bc41044g4d9cgabdfg927cg678f3023e10c" version="2">You attack in motion. After striding, strike as a free action.</content>
   <content contentuid="h28e735ddg318cg93cegbd1bg0bdb52e949b1" version="2">You must have spent at least 1 action to stride before using this action.</content>
   <content contentuid="h59c00835g7a57gd67eg86a5gbf1d8b765cfd" version="1">Gymnast Shove</content>
   <content contentuid="hb1642529g6ed4gfe2dg9da0g3c7322c7d218" version="2">Shove has the bravado trait for you, and can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
@@ -395,4 +395,27 @@
   <content contentuid="h88afbeb2g2ca1g3aa7g2142g6cd3ffc18302" version="1">Attempt an Intimidation check and make a target frightened 1 on a success.</content>
   <content contentuid="h1246a4aeg7cdbg09d0g8e1bgd5838fe84eb5" version="1">Intimidation vs Will DC.</content>
   <content contentuid="hecdd7021g8f4aga6a6g51d2g6517f85104b6" version="1">Whilst moving, you can try to move through the space of one enemy. Attempt an Acrobatics check against the enemy's Reflex DC as soon as you try to enter its space. On a success, you move through its space as though it were difficult terrain. On a failure, your movement ends, and you trigger reactions as if you had moved out of the space you started in. This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
+  <content contentuid="hb70f424dgc62ag6772gc614geeefbeeadf54" version="1">Off-Hand Finisher</content>
+  <content contentuid="haf72ed1egbb7bg970dg6393g034c2195389b" version="2">Confident Finisher (Off-Hand)</content>
+  <content contentuid="h24a6c3d0g07fag9b67g272cg1ba51fdea492" version="1">You make an incredibly graceful attack, piercing your foe’s defenses. Make a Strike which deals half your precise strike damage on failure.</content>
+  <content contentuid="hc22c7018g65aeg61c3gcae7gdae4eb89813a" version="1">Retreating Finisher (Off-Hand)</content>
+  <content contentuid="h24078833gedb0g6e93g8278gb6fc35e47d78" version="1">You make a calculated attack without letting down your guard. Make a melee Strike, and on a failure, you Step as a free action.</content>
+  <content contentuid="h046e5597gb8d6gdc38g9dabgbf4d42343bba" version="1">Unbalancing Finisher (Off-Hand)</content>
+  <content contentuid="h6fb514c7gc7b0g4ad7g0ec1g5e29d7b4ba68" version="1">You attack with a flashy assault that leaves your target off balance. Make a melee Strike. If you hit the target is &lt;LSTag Type="Status" Tooltip="OFF_BALANCED"&gt;off-guard&lt;/LSTag&gt; until the end of your next turn.</content>
+  <content contentuid="h729a88c9gb395gad5bg546fg961058d89729" version="1">Bleeding Finisher (Off-Hand)</content>
+  <content contentuid="h4bba7310g3650gf487gafefg69b0feed56cd" version="1">Your blow inflicts profuse bleeding. Make a slashing or piercing Strike. If you hit, the target also takes persistent bleed damage equal to your precise strike finisher damage.</content>
+  <content contentuid="h6f6462a5gad1cg6055gc136g4518abf0016b" version="1">Stunning Finisher (Off-Hand)</content>
+  <content contentuid="h1e75de94g0340gffd0gd893g50e0dd0cd3bd" version="1">You attempt a dizzying blow. Make a melee Strike. If you hit, your foe must attempt a Fortitude save with the incapacitation trait against your class DC, applying &lt;LSTag Type="Status" Tooltip="STUNNED1"&gt;stunned 1&lt;/LSTag&gt; on a failure, and &lt;LSTag Type="Status" Tooltip="STUNNED3"&gt;stunned 3&lt;/LSTag&gt; on a critical failure. On a success, the target cannot take reactions until its next turn.</content>
+  <content contentuid="ha60882cfg4046gf3bfg13e2g3cbdc9502afb" version="1">Stumbling Finisher (Off-Hand)</content>
+  <content contentuid="h4ec0771eg3134g4cadge9f3g2f941cad3653" version="1">Your excellent display of fighting prowess leaves your opponent stumbling back. Make a Strike. If you hit, the target is pushed [2] back (or [1] on a critical hit).</content>
+  <content contentuid="h9e4caf64g6c66g1c5dgb441g340d4bca2a66" version="1">Targeting Finisher (Off-Hand)</content>
+  <content contentuid="h773b9fd7g63abg022eg4292ga417f3f1fa7f" version="1">Targeting Finisher (Arm) (Off-Hand)</content>
+  <content contentuid="h55fd9f4bgf8f5gfe9agec15ge6a2587b42c9" version="1">The target is &lt;LSTag Type="Status" Tooltip="TARGETING_FIN_ENFEEBLED_2"&gt;enfeebled 2&lt;/LSTag&gt;. On a critical hit, it is also &lt;LSTag Type="Status" Tooltip="ENFEEBLED_1"&gt;enfeebled 1&lt;/LSTag&gt; for 1 minute.</content>
+  <content contentuid="h4555aa23gf2c4ga424gd9dag4896f1ff12ea" version="1">Targeting Finisher (Head) (Off-Hand)</content>
+  <content contentuid="h664464a8g02cag6d81gb7a0gbd77e6fc433a" version="1">The target is &lt;LSTag Type="Status" Tooltip="TARGETING_FIN_STUPEFIED_2"&gt;stupefied 2&lt;/LSTag&gt;. On a critical hit, it is also &lt;LSTag Type="Status" Tooltip="Stupefied1"&gt;stupefied 1&lt;/LSTag&gt; for 1 minute.</content>
+  <content contentuid="h35964e3dg99a9g567dg0d69ga5f3f510baba" version="1">Targeting Finisher (Leg) (Off-Hand)</content>
+  <content contentuid="h431893ebg8c50gde26gd09eg4fd7b1169c28" version="1">The target takes a [1] status penalty to its Speeds. On a critical hit, it also takes a [2] status penalty to its Speeds for 1 minute.</content>
+  <content contentuid="h2902f042g034eg31aag767ag934ed72b66a8" version="1">Mobile Finisher (Off-Hand)</content>
+  <content contentuid="haba3fecege969gf6b5ge84fg38d679b2e608" version="1">You attack in motion. After striding, strike as a free action.</content>
+  <content contentuid="h9704f09cg8001g0460g159dg44d51516cc89" version="1">Impaling Finisher (Off-Hand)</content>
 </contentList>

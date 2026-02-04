@@ -1,9 +1,30 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
+DB_DemoralizeSpells("Target_Demoralize");
+DB_DemoralizeSpells("Target_FreeDemoralize");
+DB_DemoralizeSpells("Target_DemoralizePerformance");
+DB_DemoralizeSpells("Target_DemoralizePanache");
 
+DB_AlwaysPrepare_AD("Target_DemoralizePanache",(DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery_Prepare_b523412d-1ea5-f3b0-ee9d-fa80cf72100a);
 KBSECTION
 //REGION Antagonize prevents Frightened reducing past 1
+
+IF
+UsingSpellOnTarget((GUIDSTRING)_Character, (GUIDSTRING)_Target, (STRING)_Spell, _, _, (INTEGER)_StoryID)
+AND
+DB_DemoralizeSpells(_Spell)
+AND
+HasPassive(_Character, "Antagonize", 1)
+THEN
+DB_AntagonizeCast(_Character, _Target, _StoryID);
+
+IF
+StatusApplied((GUIDSTRING)_Target, "FRIGHTENED", (GUIDSTRING)_Character, (INTEGER)_StoryID)
+AND
+DB_AntagonizeCast(_Character, _Target, _StoryID)
+THEN
+ApplyStatus(_Target, "ANTAGONIZE", -1.0, 1, _Character);
 
 IF
 StatusRemoved((GUIDSTRING)_Character, "FRIGHTENED", (GUIDSTRING)_Causee, _)

@@ -5,35 +5,47 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="17268198-b90e-46e2-92cf-bebaf4f36f9e" />
         <field name="Name" type="NameTableFieldDefinition" value="ImpalingFinisher" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ExecuteWeaponFunctors(MainHand);ApplyStatus(SELF,MAP_PENALTY_3RD,100,1);" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainWeaponDamageType);ExecuteWeaponFunctors(MainHand);RemoveStatus(SELF,PANACHE);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);ApplyStatus(SELF,MAP_PENALTY_3RD,100,1);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="(Character() or Item()) and not Self() and not Dead() and not Ally();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PiercingThrust" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hebc6f9f5g5606g80f0ga825g191f5f854732" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4b70132dg0909g165age42dg07b00c85965c" version="2" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon/2, MainWeaponDamageType)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(SwashbucklerPrecisionDamageFinisher), MainMeleeWeaponDamageType);" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Sweep" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_SweepingAttack" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee_Ground" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
-        <field name="Range" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Range" type="IntegerTableFieldDefinition" value="5" />
         <field name="Base" type="IntegerTableFieldDefinition" value="0" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="10" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IsDefaultWeaponAction;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
         <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="2" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and CanUseWeaponActions();" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1d808499-eac9-408a-b5c8-219bb4f52bdc" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0444f9b9-f4a9-4c0e-8671-3bfc3e883447" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd29056f-ab55-4414-a306-60d384747c37" />
+        <field name="Name" type="NameTableFieldDefinition" value="ImpalingFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="17268198-b90e-46e2-92cf-bebaf4f36f9e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE);GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);ApplyStatus(SELF,MAP_PENALTY_3RD,100,1);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeOffHandWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9704f09cg8001g0460g159dg44d51516cc89" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);DealDamage(LevelMapValue(SwashbucklerPrecisionDamageFinisher), OffhandMeleeWeaponDamageType);" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="1d832b0a-ccfe-4ca7-8426-10200306921c,,;c1df9aea-8be9-4de3-bcbc-4e4c1e44dc37,8da01661-8903-424d-8975-425a86a0ae77,ef63ea98-51f4-45a8-ba5c-0a89fb7fbd74;722df2d7-7898-4b0b-b930-5a850b55ccf0,19878fc9-9a3d-44eb-a507-f583b2b3b1d1,8f5261f8-80a7-47cf-ae02-0515e3f5bdab;a693a7c3-e7e7-4edb-98dd-db5fd700663f,41d529ba-1a85-4922-8665-b04acd5e902f,29a7a627-55af-4c77-bcf1-aa1a9fab5435;cbe217f4-bca8-46c0-bb22-c846b18e13a1,,;35f5cba8-3706-46d5-9a1e-2def9ba22473,30fc02f8-71de-43d3-baba-ae391bffd5f4,efb020ba-e33b-4b47-9d6c-cb9ba511afe5;c91247cd-6e65-496a-9ed0-cd36f10bdc69,,;,,;,," />
       </fields>
     </stat_object>
   </stat_objects>

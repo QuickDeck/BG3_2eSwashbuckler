@@ -35,23 +35,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="71184d47-90b7-4227-9bea-e55fd43d073f" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StunningFinisher" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4f923861g7034g77aag0e2dga243d7cc6829" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h175792d9g9fd3ge2c6gcc82g2f264c9bd55e" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_ConcussiveSmash" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
-        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_StunningFinisher') and Self(context.Source,context.Observer) and not AnyEntityIsItem();" />
-        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, IncapClassDC())" />
-        <field name="Success" type="StringTableFieldDefinition" value="IF(not SaveCritMiss()):ApplyStatus(STUNNED1,100,1);IF(SaveCritMiss()):ApplyStatus(STUNNED3,100,1);" />
-        <field name="Failure" type="StringTableFieldDefinition" value="IF(not SaveCrit()):ApplyStatus(STUNNING_FINISHER,100,1);" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a2c4999e-560e-4c60-b0aa-7cb304757950" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashyDodge" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1948eead-b551-4788-a9cb-e65765c0caa7" />

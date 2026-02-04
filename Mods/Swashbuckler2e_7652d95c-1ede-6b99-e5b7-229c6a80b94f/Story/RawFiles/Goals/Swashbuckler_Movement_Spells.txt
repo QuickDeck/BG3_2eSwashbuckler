@@ -2,7 +2,7 @@ Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
 DB_MovementSpell("Target_RetreatingFinisher");
-DB_MovementSpell("Projectile_JumpTumbleThrough");
+DB_MovementSpell("Target_TumbleThroughPanache");
 KBSECTION
 
 EXITSECTION

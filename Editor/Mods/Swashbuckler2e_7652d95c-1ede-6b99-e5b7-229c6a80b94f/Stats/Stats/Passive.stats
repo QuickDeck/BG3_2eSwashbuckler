@@ -9,7 +9,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd2ffa8c4gfc7fg6e03gb4bfgf074df811a40" version="2" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_OpeningAttack" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConfidentFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConfidentFinisher);UnlockSpell(Target_ConfidentFinisher_OffHand);" />
         <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" />
       </fields>
     </stat_object>
@@ -22,8 +22,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(SwashbucklerPrecisionDamage);LevelMapValue(SwashbucklerPrecisionDamageFinisher)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_SneakAttack_Melee" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(SneakAttackWeapon() and IsPhysicalDamage() and IsMeleeAttack() and IsHit() and not IsFinisher() and CanPrecisionDamage()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamage));IF(SneakAttackWeapon() and IsPhysicalDamage() and IsMeleeAttack() and IsHit() and IsFinisher() and CanPrecisionDamage()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamageFinisher));" />
-        <field name="TooltipConditionalDamage" type="StringTableFieldDefinition" value="IF(SneakAttackWeapon() and IsPhysicalDamage() and IsMeleeAttack() and not IsFinisher()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamage));&#xD;&#xA;IF(SneakAttackWeapon() and IsPhysicalDamage() and IsMeleeAttack() and IsFinisher()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamageFinisher));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(PreciseStrikeWeapon() and IsHit() and not IsFinisher() and CanPrecisionDamage()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamage));IF(PreciseStrikeWeapon() and IsHit() and IsFinisher() and CanPrecisionDamage()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamageFinisher));" />
+        <field name="TooltipConditionalDamage" type="StringTableFieldDefinition" value="IF(PerciseStrikeWeapon() and not IsFinisher()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamage));&#xD;&#xA;IF(PerciseStrikeWeapon() and IsFinisher()):DamageBonus(LevelMapValue(SwashbucklerPrecisionDamageFinisher));" />
         <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="f87d7b0e-bc56-4f22-b347-9ef63bfa5220" />
       </fields>
     </stat_object>
@@ -53,9 +53,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="StylishCombatant" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2d7d78f2gda1dg8e32ge718g78f8f307f1e8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h32ac137cgb921gf800g8f95g0ac24b3f6d6f" version="7" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(2)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dash_Bonus" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(CharacterLevelGreaterThan(2)):ActionResource(Movement,1.5,0);IF(CharacterLevelGreaterThan(10)):ActionResource(Movement,1.5,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(CharacterLevelGreaterThan(2)):ActionResource(Movement,2,0);IF(CharacterLevelGreaterThan(10)):ActionResource(Movement,2,0);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(STYLISH_1,100,-1);" />
       </fields>
@@ -78,7 +78,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ca0b9dag6329g8c91gc156ge9f303fc1241" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h60768e26ge37bgd59agfd9bgaa8e0e595544" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3.0);Distance(1.5)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4);Distance(2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -157,7 +157,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hef40d6c6g1287g64ebga6beg8a536234c732" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf1b6227fge66ag0623g424eg4ca85cca6262" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_PrimalStampede" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RetreatingFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RetreatingFinisher);UnlockSpell(Target_RetreatingFinisher_OffHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -167,7 +167,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2815bb8ag4c7bg9e68gaf4bgf0498dce5ad7" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4fba99efg0244g6840g4a21g02c5f17f5354" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnbalancingFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnbalancingFinisher);UnlockSpell(Target_UnbalancingFinisher_OffHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -177,7 +177,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hddcdf161g5ad4g4f4cg1bf7g53055550e2ce" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e83de08g9768g8df7g980cgb488ef365dd6" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PiercingThrust" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_ImpalingFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_ImpalingFinisher);UnlockSpell(Zone_ImpalingFinisher_OffHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -187,7 +187,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h527c5b07g8752ge30bgab4eg1046deceaa10" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Slash_New" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30feaa18gde64g8a51gcdb2g0a54bc402593" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BleedingFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BleedingFinisher);UnlockSpell(Target_BleedingFinisher_OffHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -207,7 +207,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7aa7c173g6aafgd445gcac1g6394108ba6e5" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_ConcussiveSmash" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha667db91g4386g0b3eg6d7fg237afee77aa0" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StunningFinisher);UnlockInterrupt(Interrupt_StunningFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StunningFinisher);UnlockSpell(Target_StunningFinisher_OffHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -217,7 +217,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8d5cdb7cgfa4bge962g6d7egf97b7588cad3" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PostureBreaker" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9a424731g4252g9cf8gbb6cg8ec6e174f6e6" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StumblingFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StumblingFinisher);UnlockSpell(Target_StumblingFinisher_OffHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -227,7 +227,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hee021c2cg1c1fg819agd620g778d7d62b8c2" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_HinderingStrike" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5648d4cbgb9d0g72c3g5accg1ccf793abd16" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TargetingFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TargetingFinisher);UnlockSpell(Target_TargetingFinisher_OffHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -237,7 +237,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hca9ff572g70a5gd3dbg4682g5ed442767973" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush_New" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f3ffdc7gba31g650fg5366g80e2b0c19929" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MobileFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MobileFinisher);UnlockSpell(Target_MobileFinisher_OffHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -561,7 +561,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4aa45e6cge429gd6c9g5cbcg16c9e091daa3" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('Antagonize',context.Target) and IsAttack();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ANTAGONIZE',context.Source,context.Target) and IsAttack();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,ANTAGONIZE);" />
       </fields>
     </stat_object>

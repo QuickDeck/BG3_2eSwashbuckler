@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="629cd435-3c6a-4f93-b0c7-a4b9194893b9" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="Panache_VFX">
+  <EffectInfo UUID="ade340c7-ef7f-45dc-be1b-6915dbc7b777" EffectResourceGuid="8edbe257-8f70-c8e0-4afc-53d268bfc436" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

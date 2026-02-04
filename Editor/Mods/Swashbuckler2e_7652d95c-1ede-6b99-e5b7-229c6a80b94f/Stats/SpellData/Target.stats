@@ -6,8 +6,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9684a093-cd95-40d3-b86a-dc10aa694a74" />
         <field name="Name" type="NameTableFieldDefinition" value="BaseFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6707901c-81b4-4e77-8b0c-4eb486b44976" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE);" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and CanUseWeaponActions() and ConditionResult(WieldingSneakAttackWeapon(context.Source).Result, {ConditionError('PanacheWeapon')});" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and WieldingPreciseStrikeWeapon(context.Source, true);" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Steady" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5ef5a3cg9418ge17dg3b5fg13649fa2ea82" version="2" />
@@ -18,6 +18,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_PiercingThrust" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_PiercingThrust" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(SwashbucklerPrecisionDamageFinisher), MainMeleeWeaponDamageType);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -40,7 +41,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc71c2685gc7e7g5a8ag9673g77ce611a6f7f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_PrimalStampede" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(SELF,DEBUG_RESET_MOVE,100,-1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissAttack() and not IsCriticalMiss() and not HasStatus('DISENGAGE',context.Source)):UseActionResource(SELF,Movement,100%,0,true);IF(not IsCriticalMissAttack() and not IsCriticalMiss()):RestoreResource(SELF,Movement,3,0);IF(not IsCriticalMissAttack() and not IsCriticalMiss() and not Tagged('DOUBLE_STEP',context.Source)):UseActionResource(SELF,Movement,1.5,0,true);IF(not IsCriticalMissAttack() and not IsCriticalMiss()):ApplyStatus(SELF,DISENGAGE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissAttack() and not IsCriticalMiss() and not HasStatus('DISENGAGE',context.Source)):UseActionResource(SELF,Movement,100%,0,true);IF(not IsCriticalMissAttack() and not IsCriticalMiss()):RestoreResource(SELF,Movement,4,0);IF(not IsCriticalMissAttack() and not IsCriticalMiss() and not Tagged('DOUBLE_STEP',context.Source)):UseActionResource(SELF,Movement,2,0,true);IF(not IsCriticalMissAttack() and not IsCriticalMiss()):ApplyStatus(SELF,DISENGAGE,100,1);" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_OpeningAttack" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_OpeningAttack" />
       </fields>
@@ -74,8 +75,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4fc3e71e-bc87-43f3-8159-1790743483e9" />
         <field name="Name" type="NameTableFieldDefinition" value="DualFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9684a093-cd95-40d3-b86a-dc10aa694a74" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and CanUseWeaponActions() and DualWielder(context.Source) and ConditionResult(WieldingSneakAttackWeapon(context.Source).Result, {ConditionError('PanacheWeapon')});" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeWeaponAttack);CastOffhand[Attack2e(AttackType.MeleeOffHandWeaponAttack)]" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and DualWielder(context.Source) and WieldingPreciseStrikeWeapon(context.Source, true));" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeWeaponAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(DUAL_FINISHER_HELPER,100,1);ApplyStatus(SELF,DUAL_FINISHER_FREE_STRIKE,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd27837dcge442gdcddgede8g53fba6c926dc" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h73cc2a96g5e09gc4b9g948cgf13942f35ab2" version="1" />
@@ -95,6 +96,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_ConcussiveSmash" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_ConcussiveSmash" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_ConcussiveSmash" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(STUNNING_FINISHER_APPLY,100,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -102,11 +104,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="51b814f9-d67f-40f9-8441-cc9d142596fc" />
         <field name="Name" type="NameTableFieldDefinition" value="StumblingFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9684a093-cd95-40d3-b86a-dc10aa694a74" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);Force(1.5);IF(IsCritical()):Force(1.5);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);Force(2);IF(IsCritical()):Force(2);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b29ef62g1afag38e1g59b3gb801aaa9a319" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h68d4984eg6ce1gdf68gf7a5gfbe8c124872b" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PostureBreaker" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3.0);Distance(1.5)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4);Distance(2)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Sweep" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_SweepingAttack" />
       </fields>
@@ -147,7 +149,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1faf6a80g9373g6747g0409g3514012b8824" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd6762aa4gfe86g048ag3dbcg189151861938" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_CripplingStrike" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3.0);Distance(1.5)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4);Distance(2)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Topple" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Topple" />
       </fields>
@@ -168,19 +170,162 @@
         <field name="UUID" type="IdTableFieldDefinition" value="af3bb1db-e205-4860-b45b-5665b52a2a0c" />
         <field name="Name" type="NameTableFieldDefinition" value="DualFinisherFreeStrike" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9684a093-cd95-40d3-b86a-dc10aa694a74" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ExecuteWeaponFunctors(OffHand)];" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('DUAL_FINISHER_FREE_STRIKE') and CanUseWeaponActions();" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="CastOffhand[Attack2e(AttackType.MeleeOffHandWeaponAttack)]" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="CastOffhand[DealDamage(max(0,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('DUAL_FINISHER_FREE_STRIKE');" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeOffHandWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not HasStatus('DUAL_FINISHER_HELPER');" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec668cbbgddc4gf435gdeb4gdd6162c31f40" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h49464cd8gc8afgf2e5g3811g6831067b9c54" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);DealDamage(LevelMapValue(SwashbucklerPrecisionDamageFinisher), OffhandMeleeWeaponDamageType);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value=";" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;c1df9aea-8be9-4de3-bcbc-4e4c1e44dc37,,;722df2d7-7898-4b0b-b930-5a850b55ccf0,,;a693a7c3-e7e7-4edb-98dd-db5fd700663f,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;35f5cba8-3706-46d5-9a1e-2def9ba22473,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="6b1751f5-a275-44de-bfde-352fc949162e" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_HordeBreaker_Melee" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="CastOffhand" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="Name" type="NameTableFieldDefinition" value="BaseFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9684a093-cd95-40d3-b86a-dc10aa694a74" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and WieldingPreciseStrikeWeapon(context.Source, false);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE);GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb70f424dgc62ag6772gc614geeefbeeadf54" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);DealDamage(LevelMapValue(SwashbucklerPrecisionDamageFinisher), OffhandMeleeWeaponDamageType);" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="CastOffhand" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;c1df9aea-8be9-4de3-bcbc-4e4c1e44dc37,,;722df2d7-7898-4b0b-b930-5a850b55ccf0,,;a693a7c3-e7e7-4edb-98dd-db5fd700663f,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;35f5cba8-3706-46d5-9a1e-2def9ba22473,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="6b1751f5-a275-44de-bfde-352fc949162e" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a26e0fe6-145d-42f9-ae50-50b50442c660" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConfidentFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf72ed1egbb7bg970dg6393g034c2195389b" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h24a6c3d0g07fag9b67g272cg1ba51fdea492" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissAttack() and not IsCriticalMiss() and not HasPassive('PreciseFinisher',context.Source)):DealDamage(LevelMapValue(SwashbucklerPrecisionDamageFinisher)/2, OffhandMeleeWeaponDamageType);IF(not IsCriticalMissAttack() and not IsCriticalMiss() and HasPassive('PreciseFinisher',context.Source)):DealDamage(LevelMapValue(SwashbucklerPrecisionDamageFinisher), OffhandMeleeWeaponDamageType);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_OpeningAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0675bcf8-bcc2-4a05-aea5-b5f3f0f33073" />
+        <field name="Name" type="NameTableFieldDefinition" value="RetreatingFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc22c7018g65aeg61c3gcae7gdae4eb89813a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h24078833gedb0g6e93g8278gb6fc35e47d78" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_PrimalStampede" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];ApplyStatus(SELF,DEBUG_RESET_MOVE,100,-1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissAttack() and not IsCriticalMiss() and not HasStatus('DISENGAGE',context.Source)):UseActionResource(SELF,Movement,100%,0,true);IF(not IsCriticalMissAttack() and not IsCriticalMiss()):RestoreResource(SELF,Movement,4,0);IF(not IsCriticalMissAttack() and not IsCriticalMiss() and not Tagged('DOUBLE_STEP',context.Source)):UseActionResource(SELF,Movement,2,0,true);IF(not IsCriticalMissAttack() and not IsCriticalMiss()):ApplyStatus(SELF,DISENGAGE,100,1);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_OpeningAttack" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_OpeningAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="11d103ff-237c-4d72-b1ce-4fadf29ce360" />
+        <field name="Name" type="NameTableFieldDefinition" value="UnbalancingFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h046e5597gb8d6gdc38g9dabgbf4d42343bba" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6fb514c7gc7b0g4ad7g0ec1g5e29d7b4ba68" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];ApplyStatus(OFF_BALANCED_SWASHBUCKLER,100,2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Topple" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Topple" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecb48e5f-2e3c-4218-9fe1-e1baf8b090d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BleedingFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];ApplyStatus(BLEEDING_FINISHER,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h729a88c9gb395gad5bg546fg961058d89729" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4bba7310g3650gf487gafefg69b0feed56cd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Slash_New" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ea1da43-85ad-493b-9e7c-e76960835fd9" />
+        <field name="Name" type="NameTableFieldDefinition" value="StunningFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f6462a5gad1cg6055gc136g4518abf0016b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e75de94g0340gffd0gd893g50e0dd0cd3bd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ConcussiveSmash" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_ConcussiveSmash" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_ConcussiveSmash" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];ApplyStatus(STUNNING_FINISHER_APPLY,100,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="987a312a-985b-4d11-b887-633b621fc44e" />
+        <field name="Name" type="NameTableFieldDefinition" value="StumblingFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);Force(2);IF(IsCritical()):Force(2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha60882cfg4046gf3bfg13e2g3cbdc9502afb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4ec0771eg3134g4cadge9f3g2f941cad3653" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PostureBreaker" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4);Distance(2)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Sweep" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_SweepingAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae89e726-26ad-49ce-ad23-901f84cdbd16" />
+        <field name="Name" type="NameTableFieldDefinition" value="TargetingFinisher_OffHand" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_TargetingFinisherArm_OffHand;Target_TargetingFinisherHead_OffHand;Target_TargetingFinisherLeg_OffHand;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9e4caf64g6c66g1c5dgb441g340d4bca2a66" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="75498e68-5440-4d6e-b961-61bdf9cebfa7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2d5bf21d-bb3c-4bc7-838b-2553c83c9dad" />
+        <field name="Name" type="NameTableFieldDefinition" value="TargetingFinisherArm_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_TargetingFinisher_OffHand" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];ApplyStatus(TARGETING_FIN_ENFEEBLED_2,100,1);IF(IsCritical()):ApplyStatus(ENFEEBLED_1,100,10);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h773b9fd7g63abg022eg4292ga417f3f1fa7f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55fd9f4bgf8f5gfe9agec15ge6a2587b42c9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HinderingStrike" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f48bd6f-8ef6-41a9-8b8d-c8bd1c568912" />
+        <field name="Name" type="NameTableFieldDefinition" value="TargetingFinisherHead_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];ApplyStatus(TARGETING_FIN_STUPEFIED_2,100,1);IF(IsCritical()):ApplyStatus(Stupefied1,100,10);" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_TargetingFinisher_OffHand" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4555aa23gf2c4ga424gd9dag4896f1ff12ea" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h664464a8g02cag6d81gb7a0gbd77e6fc433a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ConcussiveSmash" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_ConcussiveSmash" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_ConcussiveSmash" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a125d039-726d-4878-a318-95536abe06a1" />
+        <field name="Name" type="NameTableFieldDefinition" value="TargetingFinisherLed_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)];ApplyStatus(TARGETING_FIN_SPEED_2,100,1);IF(IsCritical()):ApplyStatus(TARGETING_FIN_SPEED_1,100,10);" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_TargetingFinisher_OffHand" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h35964e3dg99a9g567dg0d69ga5f3f510baba" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h431893ebg8c50gde26gd09eg4fd7b1169c28" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_CripplingStrike" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4);Distance(2)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Topple" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Topple" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -239,7 +384,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DemoralizePanache" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fb0099d2-b1d9-4c62-8810-6a9c78c09170" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value=";" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE_TEMPORARY);IF(IsCriticalSkill()):ApplyStatus(FRIGHTENED,100,2);IF(not IsCriticalSkill()):ApplyStatus(FRIGHTENED,100,1);IF(HasPassive('Antagonize',context.Source)):ApplyStatus(ANTAGONIZE,100,-1);ApplyStatus(SELF,PANACHE,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE_TEMPORARY);IF(IsCriticalSkill()):ApplyStatus(FRIGHTENED,100,2);IF(not IsCriticalSkill()):ApplyStatus(FRIGHTENED,100,1);ApplyStatus(SELF,PANACHE,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfbde0192g5fc3g7068g6d44g5e7509af4cae" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2809c585gf0f1ge9cege753g4c6ef9ef81e5" version="2" />
@@ -262,7 +407,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="66fed4f7-0948-4afd-82c0-0621cf2a4771" />
         <field name="Name" type="NameTableFieldDefinition" value="BonMotPanache" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE_TEMPORARY);IF(IsCriticalSkill()):ApplyStatus(BON_MOT_3,100,10);IF(not IsCriticalSkill()):ApplyStatus(BON_MOT_2,100,10);RemoveStatus(SELF,BON_MOT_2);RemoveStatus(SELF,BON_MOT_2_SELF);RemoveStatus(SELF,BON_MOT_3);ApplyStatus(SELF,PANACHE,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);IF(IsCriticalMissSkill()):ApplyStatus(SELF,BON_MOT_2_SELF,100,10);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7a9f24ecg598eg1a6bgf6f3g8f27c4d1eba6" version="1" />
@@ -285,33 +429,28 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e90350cd-e4bd-4f1c-9ea4-aeebc9e8ad4b" />
         <field name="Name" type="NameTableFieldDefinition" value="MobileFinisher" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('DEBUG_RESET_MOVE')):ApplyStatus(STRIDE,100,1);IF(HasStatus('DEBUG_RESET_MOVE')):RemoveStatus(SELF,DEBUG_RESET_MOVE);RemoveStatus(SELF,PANACHE);" />
-        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
-        <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and (HasStatus('STRIDE') or HasStatus('DASH')) and CanUseWeaponActions();" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack2e(AttackType.MeleeWeaponAttack);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and WieldingPreciseStrikeWeapon(context.Source, true) and not HasStatus('DEBUG_RESET_MOVE') and not HasStatus('TUMBLE_THROUGH_SOURCE');" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush_New" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9f82c5f4g44c7g46e0g5d2dg806c331dad64" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9bc41044g4d9cgabdfg927cg678f3023e10c" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
-        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Enemy() and not Dead()" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
-        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,,;f4ac302b-1569-404f-bd52-1fe443e265df,,:722df2d7-7898-4b0b-b930-5a850b55ccf0,,;a693a7c3-e7e7-4edb-98dd-db5fd700663f,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Melee" enumeration_type_name="WeaponFlags" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
-        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8682067a-e523-40fb-b705-3112083b6b05" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_PiercingThrust" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_PiercingThrust" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9bc41044g4d9cgabdfg927cg678f3023e10c" version="2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9684a093-cd95-40d3-b86a-dc10aa694a74" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellCategory" type="EnumerationListTableFieldDefinition" value="SC_Dash" enumeration_type_name="SpellCategoryFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca742ccc-b3ca-49bd-b729-2b875517be6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="MobileFinisher_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1b52b4c-10c5-4742-9a52-c24c9e34bd06" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,PANACHE);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and WieldingPreciseStrikeWeapon(context.Source, false) and not HasStatus('DEBUG_RESET_MOVE') and not HasStatus('TUMBLE_THROUGH_SOURCE');" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush_New" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2902f042g034eg31aag767ag934ed72b66a8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haba3fecege969gf6b5ge84fg38d679b2e608" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellCategory" type="EnumerationListTableFieldDefinition" value="SC_Dash" enumeration_type_name="SpellCategoryFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -394,7 +533,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7c05c664-a814-4ca4-9670-09e6b4650890" />
         <field name="Name" type="NameTableFieldDefinition" value="OneForAll" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ONE_FOR_ALL,100,1);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="12" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Enemy() and not Dead() and not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Glut_MultiAttack" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02fa0992g4241g0f49ga578g61210211760b" version="1" />
@@ -440,42 +579,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd15e4900gc365g7033gae56gc7ba5738c583" version="3" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUMBLE_THROUGH_SOURCE,100,1);ApplyStatus(TUMBLE_THROUGH_TARGET,100,1);ApplyStatus(SELF,TUMBLE_THROUGH_PANACHE_CHECKER,100,-1);IF(IsCriticalSkill()):ApplyStatus(BIGGER_THEY_ARE_CRIT_MARKER,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUMBLE_THROUGH_FAILED,100,1);ApplyStatus(SELF,DEBUG_RESET_MOVE,100,-1);IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);IF(IsCriticalMissSkill()):ApplyStatus(SELF,PRONE_PF2,100,-1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fb0099d2-b1d9-4c62-8810-6a9c78c09170" />
-        <field name="Name" type="NameTableFieldDefinition" value="Demoralize" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSchool" version="1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.Intimidation,DemoralizeDC());" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(SkillCrit()):ApplyStatus(FRIGHTENED,100,2);ApplyStatus(FRIGHTENED,100,1);IF(HasPassive('Antagonize',context.Source)):ApplyStatus(ANTAGONIZE,100,-1);AI_ONLY:DealDamage(2d6,Psychic);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd2d3e832g7351g18ffg8994gf326b3c9ca2e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88afbeb2g2ca1g3aa7g2142g6cd3ffc18302" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,1)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasStatus('DemoralizeImmune',context.Target,context.Source) and Character() and not Ally() and not HasStatus('FRIGHTENED') and not Tagged('MINDLESS');" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SkillActions" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_IntimidatingPresence" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="ff78157b-f004-4813-b6d7-83744a7a56e4,,;,,;6bac9e6f-c3c6-489f-8d39-2df012b3e40b,,;aec7ed45-2dec-4ee6-b5dc-6403a87a1aad,,;34da5af5-71b6-4278-9cc0-d5266ca98876,,;,,;32eb3c27-cd2c-49c1-a6c6-b21b2cccf050,,;,,;,," />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="79cab826-6ec4-4512-837f-278d0fc94394" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="6f7d94a8-e808-49ec-b7be-3a1f02a51df7" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="57593949-e63b-4b31-8b3b-5039ed5ed1cf" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DemoralizeImmune,100,100);" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('BEAST') and not Tagged('INTELLECT_DEVOURER') and not HasStatus('RAGE_MUTE') or HasPassive('RagingIntimidation');" />
-        <field name="TooltipSpellDCAbilities" type="EnumerationListTableFieldDefinition" value="Charisma" enumeration_type_name="AbilityFlags" version="1" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Rogue_ViciousMockery" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Rogue_ViciousMockery" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Impact_Rogue_ViciousMockery" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_ViciousMockery" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h1246a4aeg7cdbg09d0g8e1bgd5838fe84eb5" version="1" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
-        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="0da84949-2469-439b-b28e-06e7b33a52b1" />
-        <field name="RechargeValues" type="StringTableFieldDefinition" value="1-3" />
       </fields>
     </stat_object>
   </stat_objects>
