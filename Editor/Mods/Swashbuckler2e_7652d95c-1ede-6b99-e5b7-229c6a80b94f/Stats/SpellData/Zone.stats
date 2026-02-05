@@ -28,7 +28,7 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
         <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="2" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and CanUseWeaponActions();" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and CanUseWeaponActions() and WieldingPreciseStrikeWeapon(context.Source, false));" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1d808499-eac9-408a-b5c8-219bb4f52bdc" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0444f9b9-f4a9-4c0e-8671-3bfc3e883447" />
@@ -46,6 +46,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9704f09cg8001g0460g159dg44d51516cc89" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);DealDamage(LevelMapValue(SwashbucklerPrecisionDamageFinisher), OffhandMeleeWeaponDamageType);" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="1d832b0a-ccfe-4ca7-8426-10200306921c,,;c1df9aea-8be9-4de3-bcbc-4e4c1e44dc37,8da01661-8903-424d-8975-425a86a0ae77,ef63ea98-51f4-45a8-ba5c-0a89fb7fbd74;722df2d7-7898-4b0b-b930-5a850b55ccf0,19878fc9-9a3d-44eb-a507-f583b2b3b1d1,8f5261f8-80a7-47cf-ae02-0515e3f5bdab;a693a7c3-e7e7-4edb-98dd-db5fd700663f,41d529ba-1a85-4922-8665-b04acd5e902f,29a7a627-55af-4c77-bcf1-aa1a9fab5435;cbe217f4-bca8-46c0-bb22-c846b18e13a1,,;35f5cba8-3706-46d5-9a1e-2def9ba22473,30fc02f8-71de-43d3-baba-ae391bffd5f4,efb020ba-e33b-4b47-9d6c-cb9ba511afe5;c91247cd-6e65-496a-9ed0-cd36f10bdc69,,;,,;,," />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('PANACHE') and CanUseWeaponActions() and WieldingPreciseStrikeWeapon(context.Source, true));" />
       </fields>
     </stat_object>
   </stat_objects>

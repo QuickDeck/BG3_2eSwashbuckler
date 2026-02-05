@@ -3,6 +3,10 @@ SubGoalCombiner SGC_AND
 INITSECTION
 DB_MovementSpell("Target_RetreatingFinisher");
 DB_MovementSpell("Target_TumbleThroughPanache");
+DB_MovementSpell("Target_TripDastardly");
+DB_MovementSpell("Target_DirtyTrickDastardly");
+DB_MovementSpell("Target_TripDastardlyPanache");
+DB_MovementSpell("Target_DirtyTrickDastardlyPanache");
 KBSECTION
 
 EXITSECTION

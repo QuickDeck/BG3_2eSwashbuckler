@@ -113,11 +113,11 @@ function PreciseStrikeWeapon(entity, weapon)
    return IsMeleeUnarmedAttack() | standard_weapon
 end
 
-function WieldingPreciseStrikeWeapon(entity, mainHand)
+function WieldingPreciseStrikeWeapon(entity, offHand)
    entity = entity or context.Target
    
    -- Agile or finesse
-   local standard_weapon = WieldingWeapon('Finesse', mainHand, false, entity) | WieldingWeapon('Light', mainHand, false, entity)
+   local standard_weapon = WieldingWeapon('Finesse', offHand, false, entity) | WieldingWeapon('Light', offHand, false, entity)
    
    return ConditionResult(standard_weapon.Result, {ConditionError('PanacheWeapon')})
 end
