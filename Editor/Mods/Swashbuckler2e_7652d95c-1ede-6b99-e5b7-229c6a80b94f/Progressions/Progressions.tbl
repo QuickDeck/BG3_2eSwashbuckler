@@ -9,7 +9,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler2e" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;ReflexExpert;WillExpert;ConfidentFinisher;StylishCombatant;PreciseStrike;TumbleThroughPanache;UnarmedABP;FeatPrerequisites;AnchorPosition" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="ReflexExpert;WillExpert;ConfidentFinisher;StylishCombatant;PreciseStrike;TumbleThroughPanache" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ExpertiseBonus(Perception);ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(c7d6316b-f765-4573-b057-336043ff4de4,4);" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="5c8c9734-64b4-4b6a-9166-e3de71507020;5e6b1aaa-bb41-4ad5-afa2-653fcac41a6d;c890378f-51ab-4817-9c6d-7c71a1bf0a4f;0572e43e-404a-4f01-b02e-239ccc9cbfdf;dcf2c9a1-9004-45fb-9c44-86d34952d90b" />
@@ -24,6 +24,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="2" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(c4b29d1c-8ca7-49f5-9862-cf92ad456d84,1,ClassFeat);SelectPassives(0b29f065-a17d-4944-a183-880baaa11401,1,SkillFeat)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnarmedABP" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -35,7 +36,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="FortitudeExpert;OpportuneRiposte;VivaciousSpeed" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(a7ebbeef-e69d-47e3-9bd5-64282be8abdd,1,SkillExpertise);SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -57,7 +58,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler2e" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);SelectPassives(0cffd48f-3374-4126-a0a2-14e5923baee0,4,AbilityBoosts)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(a7ebbeef-e69d-47e3-9bd5-64282be8abdd,1,SkillExpertise);SelectPassives(0cffd48f-3374-4126-a0a2-14e5923baee0,4,AbilityBoosts)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="WeaponExpert;CriticalSpecialization" />
       </fields>
     </stat_object>
@@ -82,7 +83,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ReflexMaster;WeaponSpecializationExpert" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="ReflexExpert" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(a7ebbeef-e69d-47e3-9bd5-64282be8abdd,1,SkillExpertise);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -117,6 +118,8 @@
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(d9491aac-fd17-4ad2-8801-aadb3e906b59,1,ClassFeat);SelectPassives(218a9472-75d8-4b85-8aba-7f9d9f628dca,1,SkillFeat)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnarmedABP_Rank2" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="UnarmedABP" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

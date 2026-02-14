@@ -496,6 +496,8 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('DEBUG_RESET_MOVE') and HasActionResource('Movement',50,0,true,true,context.Source);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="Flourish:1" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnMove" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfcd095e6gfe84g02eeg8f81ga9e77cc1aa5c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf35f8261g81cegc5d2gfa67g511497919336" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -507,6 +509,8 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('DEBUG_RESET_MOVE') and HasActionResource('Movement',50,0,true,true);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="Flourish:1" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnMove" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bd1f058gbd9dg3d27g98bfgb06fe5ee84cb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he87df75fgb328g39d5g68cfg869c8bd43d4c" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -526,6 +530,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="a9b3ca80-6181-4ce8-8163-ce83994c697e" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(IsCriticalSkill()):ApplyStatus(CLUMSY_DIRTY_TRICK,100,-1);IF(not IsCriticalSkill()):ApplyStatus(CLUMSY,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(IsCriticalMissSkill()):ApplyStatus(SELF,PRONE_PF2,100,10);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h612787e7gf227g4e4bg95edg7d63444ae3fb" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -575,7 +580,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4891bffbg1514g4c19gabceg48ee0b5b7105" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7a9071db-619e-4af5-8b3f-f099e2c86b75" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUMBLE_THROUGH_SOURCE,100,1);ApplyStatus(TUMBLE_THROUGH_TARGET,100,1);ApplyStatus(SELF,TUMBLE_THROUGH_PANACHE_CHECKER,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUMBLE_THROUGH_SOURCE,100,1);ApplyStatus(TUMBLE_THROUGH_TARGET,100,1);IF(HasStatus('MANUAL_STRIDE',context.Source) and not HasStatus('STRIDE',context.Source)):RestoreResource(SELF,Movement,100%,0,true);ApplyStatus(SELF,TUMBLE_THROUGH_PANACHE_CHECKER,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUMBLE_THROUGH_FAILED,100,1);ApplyStatus(SELF,DEBUG_RESET_MOVE,100,-1);IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);" />
       </fields>
     </stat_object>
@@ -588,7 +593,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_OuterEntitySubjugation" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he329922ag6fcag6305g8dfdg35d2906ab7ea" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd15e4900gc365g7033gae56gc7ba5738c583" version="3" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUMBLE_THROUGH_SOURCE,100,1);ApplyStatus(TUMBLE_THROUGH_TARGET,100,1);ApplyStatus(SELF,TUMBLE_THROUGH_PANACHE_CHECKER,100,-1);IF(IsCriticalSkill()):ApplyStatus(BIGGER_THEY_ARE_CRIT_MARKER,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUMBLE_THROUGH_SOURCE,100,1);ApplyStatus(TUMBLE_THROUGH_TARGET,100,1);IF(HasStatus('MANUAL_STRIDE',context.Source) and not HasStatus('STRIDE',context.Source)):RestoreResource(SELF,Movement,100%,0,true);ApplyStatus(SELF,TUMBLE_THROUGH_PANACHE_CHECKER,100,-1);IF(IsCriticalSkill()):ApplyStatus(BIGGER_THEY_ARE_CRIT_MARKER,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUMBLE_THROUGH_FAILED,100,1);ApplyStatus(SELF,DEBUG_RESET_MOVE,100,-1);IF(not IsCriticalMissSkill() and not HasStatus('PANACHE', context.Source)):ApplyStatus(SELF,PANACHE_TEMPORARY,100,2);IF(not IsCriticalMissSkill()):SetStatusDuration(SELF,PANACHE_TEMPORARY,2,ForceSet);IF(IsCriticalMissSkill()):ApplyStatus(SELF,PRONE_PF2,100,-1);" />
       </fields>
     </stat_object>

@@ -8,7 +8,7 @@
                     <attribute id="Boosts" type="LSString" value="ExpertiseBonus(Perception);ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
-                    <attribute id="PassivesAdded" type="LSString" value="PathfinderStatBoosts;ReflexExpert;WillExpert;ConfidentFinisher;StylishCombatant;PreciseStrike;TumbleThroughPanache;UnarmedABP;FeatPrerequisites;AnchorPosition"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ReflexExpert;WillExpert;ConfidentFinisher;StylishCombatant;PreciseStrike;TumbleThroughPanache"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(c7d6316b-f765-4573-b057-336043ff4de4,4);"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
@@ -38,6 +38,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnarmedABP"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(c4b29d1c-8ca7-49f5-9862-cf92ad456d84,1,ClassFeat);SelectPassives(0b29f065-a17d-4944-a183-880baaa11401,1,SkillFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
@@ -48,7 +49,7 @@
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="PassivesAdded" type="LSString" value="FortitudeExpert;OpportuneRiposte;VivaciousSpeed"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(a7ebbeef-e69d-47e3-9bd5-64282be8abdd,1,SkillExpertise);SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="eccad46b-9325-4d96-911b-ab9ca3a67e79"/>
                 </node>
@@ -65,7 +66,7 @@
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
                     <attribute id="PassivesAdded" type="LSString" value="WeaponExpert;CriticalSpecialization"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);SelectPassives(0cffd48f-3374-4126-a0a2-14e5923baee0,4,AbilityBoosts)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(a7ebbeef-e69d-47e3-9bd5-64282be8abdd,1,SkillExpertise);SelectPassives(0cffd48f-3374-4126-a0a2-14e5923baee0,4,AbilityBoosts)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="ce8a0ed7-1b2e-4b65-a4df-5c29724e6e7f"/>
                 </node>
@@ -83,7 +84,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="ReflexMaster;WeaponSpecializationExpert"/>
                     <attribute id="PassivesRemoved" type="LSString" value="ReflexExpert"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(a7ebbeef-e69d-47e3-9bd5-64282be8abdd,1,SkillExpertise);"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>
                     <attribute id="UUID" type="guid" value="0a5798e9-79d1-4a72-9055-c55721461ead"/>
                 </node>
@@ -107,6 +108,8 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler2e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnarmedABP_Rank2"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="UnarmedABP"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(d9491aac-fd17-4ad2-8801-aadb3e906b59,1,ClassFeat);SelectPassives(218a9472-75d8-4b85-8aba-7f9d9f628dca,1,SkillFeat)"/>
                     <attribute id="TableUUID" type="guid" value="78aab2d4-caba-4153-bc4a-0c5f9984ce6a"/>

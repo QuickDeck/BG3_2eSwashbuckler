@@ -418,4 +418,9 @@
   <content contentuid="h2902f042g034eg31aag767ag934ed72b66a8" version="1">Mobile Finisher (Off-Hand)</content>
   <content contentuid="haba3fecege969gf6b5ge84fg38d679b2e608" version="1">You attack in motion. After striding, strike as a free action.</content>
   <content contentuid="h9704f09cg8001g0460g159dg44d51516cc89" version="1">Impaling Finisher (Off-Hand)</content>
+  <content contentuid="hfcd095e6gfe84g02eeg8f81ga9e77cc1aa5c" version="1">Dastardly Trip</content>
+  <content contentuid="hf35f8261g81cegc5d2gfa67g511497919336" version="1">During a stride, you may attempt an Athletics check to trip your target, knocking it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;prone&lt;/LSTag&gt;, at the cost of 50% of your Speed. This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
+  <content contentuid="h3bd1f058gbd9dg3d27g98bfgb06fe5ee84cb" version="1">Dastardly Trick</content>
+  <content contentuid="he87df75fgb328g39d5g68cfg869c8bd43d4c" version="1">During a stride, you may attempt a Thievery check against the target's Acrobatics DC, at the cost of 50% of your Speed. This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
+  <content contentuid="h612787e7gf227g4e4bg95edg7d63444ae3fb" version="1">During a stride, you may attempt a Thievery check against the target's Acrobatics DC, at the cost of 50% of your Speed.</content>
 </contentList>
