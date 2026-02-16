@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="400"/>
+    <version major="4" minor="8" revision="0" build="500"/>
     <region id="PassiveLists">
         <node id="root">
             <children>
@@ -38,6 +38,56 @@
                     <attribute id="Name" type="FixedString" value="Swashbuckler Level 12 Class Feats"/>
                     <attribute id="Passives" type="LSString" value="FeatPrerequisites,CheatDeath,GetUsedToDisappointment,MobileFinisher,TheBiggerTheyAre,Derringdo,ReflexiveRiposte,StumblingFinisher,TargetingFinisher,BleedingFinisher,DualFinisher,StunningFinisher,VivaciousBravado,AgileManeuvers,CombinationFinisher,PreciseFinisher,ReactiveStrike,DastardlyDash,EvenTheOdds,GuardiansDeflection,ImpalingFinisher,AfterYou,Antagonize,CharmedLife,FinishingFollowthrough,RetreatingFinisher,UnbalancingFinisher,DisarmingFlair,ExtravagantParry,FlashyDodge,GoadingFeint,OneForAll,YoureNext"/>
                     <attribute id="UUID" type="guid" value="31b3093f-e08b-4f81-bcf6-7aa319cd9644"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Braggart Stylish Tricks"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsExpert,IntimidationExpert"/>
+                    <attribute id="UUID" type="guid" value="3f3a5dfc-1a4b-417a-936f-5bf8021237aa"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Fencer Stylish Tricks"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsExpert,DeceptionExpert"/>
+                    <attribute id="UUID" type="guid" value="d25eee36-d2b4-4d7c-b823-803153e4810d"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Gymnast Stylish Tricks"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsExpert,AthleticsExpert"/>
+                    <attribute id="UUID" type="guid" value="c1430fbe-8b20-49ac-b92d-09c63534d7b4"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Rascal Stylish Tricks"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsExpert,SleightOfHandExpert"/>
+                    <attribute id="UUID" type="guid" value="ccdef948-95f8-4489-ace8-bcf86087b142"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Wit Stylish Tricks"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsExpert,PersuasionExpert"/>
+                    <attribute id="UUID" type="guid" value="2b6a3671-be79-4a33-baad-990ec5d1138a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Braggart Master"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsIncrease,IntimidationIncrease"/>
+                    <attribute id="UUID" type="guid" value="a755dac1-eaf3-4d77-8a81-afdd6b4e5515"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Fencer Master"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsIncrease,DeceptionIncrease"/>
+                    <attribute id="UUID" type="guid" value="c2ecd89c-8ec6-4e00-8de2-f93b03fd1138"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Gymnast Master"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsIncrease,AthleticsIncrease"/>
+                    <attribute id="UUID" type="guid" value="8325d498-c58a-4d60-94bd-4eca026fe76d"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Rascal Master"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsIncrease,SleightOfHandIncrease"/>
+                    <attribute id="UUID" type="guid" value="7ec8c85b-788c-4aea-b0ad-b06d445c4972"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Wit Master"/>
+                    <attribute id="Passives" type="LSString" value="AcrobaticsIncrease,PersuasionIncrease"/>
+                    <attribute id="UUID" type="guid" value="9b0b514a-5da4-4bfb-9fab-1f9134b1b041"/>
                 </node>
             </children>
         </node>

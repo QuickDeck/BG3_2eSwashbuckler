@@ -50,5 +50,75 @@
         <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,CheatDeath,GetUsedToDisappointment,MobileFinisher,TheBiggerTheyAre,Derringdo,ReflexiveRiposte,StumblingFinisher,TargetingFinisher,BleedingFinisher,DualFinisher,StunningFinisher,VivaciousBravado,AgileManeuvers,CombinationFinisher,PreciseFinisher,ReactiveStrike,DastardlyDash,EvenTheOdds,GuardiansDeflection,ImpalingFinisher,AfterYou,Antagonize,CharmedLife,FinishingFollowthrough,RetreatingFinisher,UnbalancingFinisher,DisarmingFlair,ExtravagantParry,FlashyDodge,GoadingFeint,OneForAll,YoureNext" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f3a5dfc-1a4b-417a-936f-5bf8021237aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Braggart Stylish Tricks" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsExpert,IntimidationExpert" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d25eee36-d2b4-4d7c-b823-803153e4810d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fencer Stylish Tricks" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsExpert,DeceptionExpert" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1430fbe-8b20-49ac-b92d-09c63534d7b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Gymnast Stylish Tricks" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsExpert,AthleticsExpert" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ccdef948-95f8-4489-ace8-bcf86087b142" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rascal Stylish Tricks" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsExpert,SleightOfHandExpert" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b6a3671-be79-4a33-baad-990ec5d1138a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Wit Stylish Tricks" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsExpert,PersuasionExpert" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a755dac1-eaf3-4d77-8a81-afdd6b4e5515" />
+        <field name="Name" type="NameTableFieldDefinition" value="Braggart Master" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsIncrease,IntimidationIncrease" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2ecd89c-8ec6-4e00-8de2-f93b03fd1138" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fencer Master" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsIncrease,DeceptionIncrease" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8325d498-c58a-4d60-94bd-4eca026fe76d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Gymnast Master" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsIncrease,AthleticsIncrease" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ec8c85b-788c-4aea-b0ad-b06d445c4972" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rascal Master" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsIncrease,SleightOfHandIncrease" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9b0b514a-5da4-4bfb-9fab-1f9134b1b041" />
+        <field name="Name" type="NameTableFieldDefinition" value="Wit Master" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AcrobaticsIncrease,PersuasionIncrease" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

@@ -83,7 +83,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ReflexMaster;WeaponSpecializationExpert" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="ReflexExpert" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(a7ebbeef-e69d-47e3-9bd5-64282be8abdd,1,SkillExpertise);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -218,7 +218,18 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Braggart" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkillsExpertise(5b462767-a327-4dcc-9dc5-efd65df5a331,1);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(3f3a5dfc-1a4b-417a-936f-5bf8021237aa,1,StylishExpertise);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_22" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c1bafc4e-6b1c-4460-98f9-f7e4d3eb0811" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="a6df37c2-553d-4776-b674-434dfe5d4407" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Braggart" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(a755dac1-eaf3-4d77-8a81-afdd6b4e5515,1,StylishExpertise);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -229,7 +240,18 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Fencer" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkillsExpertise(caca6df7-76d5-4722-bbe1-43b17880ecea,1);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(d25eee36-d2b4-4d7c-b823-803153e4810d,1,StylishExpertise);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_23" />
+        <field name="UUID" type="IdTableFieldDefinition" value="01ac1070-386d-4616-9363-d6fd6faa891c" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4de2e31e-83da-4f9f-9c94-d949a914fa03" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Fencer" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(c2ecd89c-8ec6-4e00-8de2-f93b03fd1138,1,StylishExpertise);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -240,7 +262,18 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Gymnast" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkillsExpertise(514c85b2-2369-4331-b3c4-85be33538f1e,1);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(c1430fbe-8b20-49ac-b92d-09c63534d7b4,1,StylishExpertise);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_24" />
+        <field name="UUID" type="IdTableFieldDefinition" value="12d1952f-569d-4049-9415-001a4e14aba8" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="0aaae3cd-aeeb-4da1-b58e-ff8ab8c3b7dd" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Gymnast" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(8325d498-c58a-4d60-94bd-4eca026fe76d,1,StylishExpertise);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -251,7 +284,18 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Rascal" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkillsExpertise(0c600574-b732-4b5a-b34c-fde980c36d64,1);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ccdef948-95f8-4489-ace8-bcf86087b142,1,StylishExpertise);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_25" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cb7c2945-5b7f-4e13-a34e-4a5192e51895" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="00ae5915-7458-485f-b702-28c2df9c8dd9" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Rascal" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(7ec8c85b-788c-4aea-b0ad-b06d445c4972,1,StylishExpertise);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -262,7 +306,18 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Wit" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkillsExpertise(e73259d1-4bcd-42f5-8d1a-f4c341f5890e,1);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(2b6a3671-be79-4a33-baad-990ec5d1138a,1,StylishExpertise);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_26" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f5f0beed-b78b-4357-80bf-ee0ebf1a3caf" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="df5cb860-1d53-485a-b7c5-848819b99e21" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Wit" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(9b0b514a-5da4-4bfb-9fab-1f9134b1b041,1,StylishExpertise);" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="200"/>
+    <version major="4" minor="8" revision="0" build="500"/>
     <region id="SkillLists">
         <node id="root">
             <children>
-                <node id="SkillList">
-                    <attribute id="Name" type="FixedString" value="Swashbuckler Skill List"/>
-                    <attribute id="Skills" type="LSString" value="Acrobatics, AnimalHandling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Performance, Persuasion, Religion, SleightOfHand, Stealth, Survival"/>
-                    <attribute id="UUID" type="guid" value="c7d6316b-f765-4573-b057-336043ff4de4"/>
-                </node>
                 <node id="SkillList">
                     <attribute id="Name" type="FixedString" value="Braggart Stylish Tricks"/>
                     <attribute id="Skills" type="LSString" value="Acrobatics, Intimidation"/>

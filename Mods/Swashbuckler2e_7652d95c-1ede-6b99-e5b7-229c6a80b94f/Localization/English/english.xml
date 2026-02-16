@@ -423,4 +423,6 @@
   <content contentuid="h3bd1f058gbd9dg3d27g98bfgb06fe5ee84cb" version="1">Dastardly Trick</content>
   <content contentuid="he87df75fgb328g39d5g68cfg869c8bd43d4c" version="1">During a stride, you may attempt a Thievery check against the target's Acrobatics DC, at the cost of 50% of your Speed. This action can grant you &lt;LSTag Type="Status" Tooltip="PANACHE"&gt;panache&lt;/LSTag&gt;.</content>
   <content contentuid="h612787e7gf227g4e4bg95edg7d63444ae3fb" version="1">During a stride, you may attempt a Thievery check against the target's Acrobatics DC, at the cost of 50% of your Speed.</content>
+  <content contentuid="h8d0b0e58g82ceg1039gb410gc7b3b8f81633" version="1">Stylish Tricks</content>
+  <content contentuid="hd9aa0b12ge098g64f0g5365g886d9f8c5537" version="1">You gain an additional skill increase in either acrobatics or the skill granted by your style.</content>
 </contentList>

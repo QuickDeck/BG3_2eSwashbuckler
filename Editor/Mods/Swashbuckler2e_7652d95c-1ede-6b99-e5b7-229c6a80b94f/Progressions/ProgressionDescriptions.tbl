@@ -61,5 +61,14 @@
         <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="df5cb860-1d53-485a-b7c5-848819b99e21" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0301baab-1905-49d2-95e0-425a0704cda2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8d0b0e58g82ceg1039gb410gc7b3b8f81633" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd9aa0b12ge098g64f0g5365g886d9f8c5537" version="1" />
+        <field name="SelectorId" type="FixedStringTableFieldDefinition" value="StylishExpertise" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
