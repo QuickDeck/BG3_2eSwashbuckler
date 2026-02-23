@@ -5,6 +5,11 @@
         <node id="root">
             <children>
                 <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, AnimalHandling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Performance, Persuasion, Religion, SleightOfHand, Stealth, Survival"/>
+                    <attribute id="UUID" type="guid" value="c7d6316b-f765-4573-b057-336043ff4de4"/>
+                </node>
+                <node id="SkillList">
                     <attribute id="Name" type="FixedString" value="Braggart Stylish Tricks"/>
                     <attribute id="Skills" type="LSString" value="Acrobatics, Intimidation"/>
                     <attribute id="UUID" type="guid" value="5b462767-a327-4dcc-9dc5-efd65df5a331"/>
